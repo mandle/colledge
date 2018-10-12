@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Controls whether info logs from the Log script include are actually logged or not.&#13;
+&#13;
+True enables logging.&#13;
+False disables logging.&#13;
+&#13;
+log.all overrides this.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_240055_colledge.log.info</name>
+        <read_roles/>
+        <suffix>log.info</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-11 19:52:21</sys_created_on>
+        <sys_id>e2d33ddedb852300d06853184b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_240055_colledge.log.info</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_properties_e2d33ddedb852300d06853184b96194c</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-11 19:52:21</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=e2d33ddedb852300d06853184b96194c"/>
+</record_update>

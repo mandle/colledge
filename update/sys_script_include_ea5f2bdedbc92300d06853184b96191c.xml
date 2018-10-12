@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_240055_colledge.Logging</api_name>
+        <client_callable>false</client_callable>
+        <description>Responsible for logging messages to the system log and to the current session. Aid in debugging.</description>
+        <name>Logging</name>
+        <script><![CDATA[var Logging = Class.create();
+Logging.prototype = {
+    initialize: function() {
+    },
+
+    type: 'Logging'
+};
+
+Logging._shouldLog = function() {
+	return Metadata.getProperty('log.all') === 'true';
+};
+
+Logging._shouldLogVisible = function() {
+	return Logging._shouldLog() && Metadata.getProperty('log.all.visible') === 'true';
+};
+
+Logging._shouldLogInfo = function() {
+	return Logging._shouldLog() && Metadata.getProperty('log.info') === 'true';
+};
+
+Logging._shouldLogInfoVisible = function() {
+	return Logging._shouldLogVisible() && Logging._shouldLogInfo() && Metadata.getProperty('log.info.visible') === true;
+};
+
+Logging._shouldLogWarn = function() {
+	return Logging._shouldLog() && Metadata.getProperty('log.warn') === 'true';
+};
+
+Logging._shouldLogWarnVisible = function() {
+	return Logging._shouldLogVisible() && Logging._shouldLogWarn() && Metadata.getProperty('log.warn.visible') === true;
+};
+
+Logging._shouldLogCritical = function() {
+	return Logging._shouldLog() && Metadata.getProperty('log.critical') === true;
+};
+
+Logging._shouldLogCriticalVisible = function() {
+	return Logging._shouldLogVisible() && Logging._shouldLogCritical() && Metadata.getProperty('log.critical.visible') === true;
+};
+
+Logging.info = function info(message) {
+	Expect.type.isString(message);
+	if(Logging._shouldLogInfo()) {
+		gs.info(message);
+	}
+	
+	if(Logging._shouldLogInfoVisible()) {
+		gs.addInfoMessage(message);
+	}
+};
+
+Logging.warn = function warn(message) {
+	Expect.type.isString(message);
+	if(Logging._shouldLogInfo()) {
+		gs.warn(message);
+	}
+	
+	if(Logging._shouldLogInfoVisible()) {
+		gs.addErrorMessage(message);
+	}
+};
+
+Logging.critical = function critical(message) {
+	Expect.type.isString(message);
+	if(Logging._shouldLogInfo()) {
+		gs.error(message);
+	}
+	
+	if(Logging._shouldLogInfoVisible()) {
+		gs.addErrorMessage(message);
+	}
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-12 04:53:26</sys_created_on>
+        <sys_id>ea5f2bdedbc92300d06853184b96191c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Logging</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_script_include_ea5f2bdedbc92300d06853184b96191c</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-12 05:20:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

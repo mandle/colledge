@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_240055_colledge.Metadata</api_name>
+        <client_callable>false</client_callable>
+        <description>Contains functions for determining things about this scoped application's metadata, like the values of system properties, the name of the scoped application, etc.</description>
+        <name>Metadata</name>
+        <script><![CDATA[var Metadata = Class.create();
+Metadata.prototype = {
+    initialize: function() {
+    },
+
+    type: 'Metadata'
+};
+
+Metadata.getProperty = function getProperty(name) {
+	if(typeof name !== string) {
+		throw new Error('Metadata.getProperty: name was not a string, but was ' + name);
+	}
+	var fullName = gs.getCurrentScopeName() + '.' + name;
+	var prop = gs.getProperty( fullName, null);
+	
+	if(prop === null || prop === undefined) {
+		throw new Error('Metadata.getProperty: ' + fullName + ' is not a system property ' + '(' + 'name' + ')');
+	}
+	
+	if(typeof prop !== 'string') {
+		throw new Error('Metadata.getProperty: ' + 'property value was not a string - ' + prop);
+	}
+	
+	return prop;
+	
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-12 04:17:27</sys_created_on>
+        <sys_id>8d172bd6dbc92300d06853184b9619a3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Metadata</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_script_include_8d172bd6dbc92300d06853184b9619a3</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-12 04:24:38</sys_updated_on>
+    </sys_script_include>
+</record_update>

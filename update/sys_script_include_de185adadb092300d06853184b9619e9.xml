@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_240055_colledge.Expect</api_name>
+        <client_callable>false</client_callable>
+        <description>Defines an API for defining and executing expectations within code. Can be used to verify pre-conditions, post-conditions, etc.&#13;
+</description>
+        <name>Expect</name>
+        <script><![CDATA[var Expect = Class.create();
+Expect.prototype = {
+    initialize: function() {
+
+    },
+
+    type: 'Expect'
+};
+
+Expect.execute = function execute(scriptType, name, fn) {
+	try {
+		if(typeof scriptType !== 'string') {
+			throw new Error('Expect.execute: type was not a string');
+		}
+		if(typeof name !== 'string') {
+			throw new Error('Expect.execute: name was not a string');
+		}
+		fn();
+	} catch (error) {
+		var errorMessage = 'Type: ' + scriptType + '\n' +
+						   'Name: ' + name + '\n' +
+						   'Error: ' + error;
+		gs.addErrorMessage(errorMessage);
+		gs.error(errorMessage);
+		
+	}
+};
+
+// These functions determine whether the Expectations should occur or not.
+Expect._shouldCheck = function () {
+	return Metadata.getProperty('expect.all') == 'true';
+};
+
+Expect._shouldCheckType = function () {
+	return Expect.shouldCheck() && Metadata.getProperty('expect.types') == 'true';
+};
+
+Expect._shouldCheckActual = function() {
+	return Expect.shouldCheck() && Metadata.getProperty('expect.actual') == 'true';
+};
+
+
+Expect.type = {
+	
+	_generateCheck: function _generateCheck(typeStr) {
+		return Expect._shouldCheckType() ? function(val) {
+				var type = typeof val;
+				if(type == typeStr) {
+					return;
+				} else {
+					throw new Error('expected ' + typeStr +
+								   ', got ' + type);
+				}
+			} : function(val) { };
+	},
+	
+	isString: function isString(val) {
+		return (Expect.type._generateCheck('string'))(val);
+	},
+	
+	isNumber: function isNumber(val) {
+		return (Expect.type._generateCheck('number'))(val);
+	},
+	
+	isBool: function isBool(val) {
+		return (Expect.type._generateCheck('boolean'))(val);
+	},
+	
+	isUndefined: function isUndefined(val) {
+		return (Expect.type._generateCheck('undefined'))(val);
+	},
+	
+	isFunction: function isFunction(val) {
+		return (Expect.type._generateCheck('function'));
+	},
+	
+	isObject: function isObject(val) {
+		Expect.type.isNotNull(val);
+		(Expect.type._generateCheck('object'))(val);
+	},
+	
+	isNotNull: function isNotNull(val) {
+		if(! Expect._shouldCheckType()) {
+			return;
+		}
+		
+		if(val == null) {
+			throw new Error('expected not null');
+		}
+	},
+	
+	isNotUndefined: function isNotUndefined(val) {
+		if(! Expect._shouldCheckType()) {
+			return;
+		}
+		
+		if(val == undefined) {
+			throw new Error('expected not undefined');
+		}
+	},
+	
+	isValid: function isValid(val) {
+		if(! Expect._shouldCheckType()) {
+			return;
+		}
+		
+		Expect.type.isNotNull(val);
+		Expect.type.isNotUndefined(val);
+	}
+};
+
+Expect.types = {
+	areSame: function areSame(a, b) {
+		if(! Expect._shouldCheckType()) {
+			return;
+		}
+		
+		var typeA = typeof a;
+		var typeB = typeof b;
+		if(typeA !== typeB) {
+			throw new Error(a + ' had type ' + typeA + ' but ' + b + 'had type ' + typeB);
+		}
+	}
+};
+
+// Private class to be used only by Expect.
+var _Actual = Class.create();
+_Actual.prototype = {
+    initialize: function(val) {
+		this.actual = val;
+    },
+	
+	_check: function _check(comparison, operator, expected) {
+		if(! Expect._shouldCheckActual()) {
+			return;
+		}
+		
+		Expect.type.isBool(comparison);
+		Expect.type.isString(operator);
+		Expect.types.areSame(this.actual, this.expected);
+		if(!comparison) {
+			throw new Error('the following did not hold: ' + this.actual + ' ' + operator + ' ' +  expected + ' (actual vs expected)');
+		}
+	},
+	
+	eq: function eq(expected) {
+		this._check(this.actual === expected, '===', expected);
+	},
+	
+	neq: function neq(expected) {
+		this._check(this.actual !== expected, '!==', expected);
+	},
+	
+	gt: function gt(expected) {
+		this._check(this.actual > expected, '>', expected);
+	},
+	
+	gte: function gte(expected) {
+		this._check(this.actual >= expected, '>=', expected);
+	},
+	
+	lt: function lt(expected) {
+		this._check(this.actual < expected, '<', expected);
+	},
+	
+	lte: function lte(expected) {
+		this._check(this.actual <= expected, '<=', expected);
+	},
+
+    type: 'Actual'
+};
+
+Expect.actual = function actual(val) {
+	return new _Actual(val);
+};
+
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-11 22:59:07</sys_created_on>
+        <sys_id>de185adadb092300d06853184b9619e9</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Expect</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_script_include_de185adadb092300d06853184b9619e9</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-12 05:24:28</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Logging">72253552dbc52300d06853184b961981</category>
+        <order>100</order>
+        <property display_value="x_240055_colledge.log.critical.visible" name="x_240055_colledge.log.critical.visible">4b05bd12dbc52300d06853184b9619b0</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-11 19:59:08</sys_created_on>
+        <sys_id>d795b512dbc52300d06853184b961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_240055_colledge.log.critical.visible.Logging</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_d795b512dbc52300d06853184b961981</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-11 19:59:08</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>
