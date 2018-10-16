@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="gender" table="x_240055_colledge_building" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coed</label>
+            <language>en</language>
+            <name>x_240055_colledge_building</name>
+            <sequence/>
+            <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:13:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>feb38ee3db412300d06853184b9619da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:13:20</sys_updated_on>
+            <value>coed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Female only</label>
+            <language>en</language>
+            <name>x_240055_colledge_building</name>
+            <sequence/>
+            <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:13:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05a30ee3db412300d06853184b961967</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:13:00</sys_updated_on>
+            <value>female only</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Male only</label>
+            <language>en</language>
+            <name>x_240055_colledge_building</name>
+            <sequence/>
+            <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:12:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e830227db412300d06853184b9619d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:12:33</sys_updated_on>
+            <value>male only</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <name>x_240055_colledge_building</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:12:33</sys_created_on>
+            <sys_id>1d93cae3db412300d06853184b961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>gender</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_choice_x_240055_colledge_building_gender</sys_update_name>
+            <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:12:33</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

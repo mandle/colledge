@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Faculty" max_length="40" name="x_240055_colledge_faculty" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="User Reference" mandatory="true" max_length="32" name="user_reference" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user_reference"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>This macro forces load of the expectation library.</description>
+        <media_type/>
+        <name>Expect</name>
+        <scoped_name>x_240055_colledge_Expect</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-12 14:21:41</sys_created_on>
+        <sys_id>2fc1bd2edb016300d06853184b96191f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Expect</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_ui_macro_2fc1bd2edb016300d06853184b96191f</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-12 14:35:37</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:evaluate var="jvar_should_expect" >
+		var prefix = "x_240055_colledge.";
+		var should = gs.getProperty(prefix + "expect.all") === "true";
+		should;
+	</g:evaluate>
+	
+	<j:set_if var="jvar_expect_file" test="${jvar_should_expect}"
+			  true="x_240055_colledge.Expect.jsdbx"
+			  false="x_240055_colledge.MockExpect.jsdbx"/>
+
+	<g:requires name="${jvar_expect_file}" />
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

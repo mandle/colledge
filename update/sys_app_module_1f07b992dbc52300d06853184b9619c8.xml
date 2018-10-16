@@ -14,7 +14,7 @@
         <mobile_title>Logging</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>190</order>
+        <order>9950</order>
         <override_menu_roles>false</override_menu_roles>
         <query>./system_properties_ui.do?sysparm_title=Logging%20Properties&amp;sysparm_category=Logging</query>
         <report/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1f07b992dbc52300d06853184b9619c8</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Logging</sys_name>
         <sys_overrides/>
         <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
         <sys_update_name>sys_app_module_1f07b992dbc52300d06853184b9619c8</sys_update_name>
         <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
-        <sys_updated_on>2018-10-11 22:05:33</sys_updated_on>
+        <sys_updated_on>2018-10-12 18:34:08</sys_updated_on>
         <timeline_page/>
         <title>Logging</title>
         <uncancelable>false</uncancelable>

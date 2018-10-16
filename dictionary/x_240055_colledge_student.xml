@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Student" max_length="40" name="x_240055_colledge_student" type="collection">
+        <element label="Building Address" max_length="32" name="building_address" reference="x_240055_colledge_building" type="reference"/>
+        <element label="Campus" max_length="32" name="campus" reference="x_240055_colledge_campus" type="reference"/>
+        <element label="Room Assignment" max_length="32" name="room_assignment" reference="x_240055_colledge_room" type="reference"/>
+        <element label="Secondary Student ID" max_length="40" name="secondary_student_id" type="integer"/>
+        <element display="true" label="Student ID" max_length="32" name="student_id" reference="sys_user" type="reference"/>
+        <element choice="3" default="1" label="Year" max_length="40" name="year" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Freshman" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Sophomore" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Junior" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Senior" sequence="4" value="4"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="building_address"/>
+        </index>
+        <index name="index2">
+            <element name="campus"/>
+        </index>
+        <index name="index3">
+            <element name="student_id"/>
+        </index>
+        <index name="index4">
+            <element name="room_assignment"/>
+        </index>
+    </element>
+</database>

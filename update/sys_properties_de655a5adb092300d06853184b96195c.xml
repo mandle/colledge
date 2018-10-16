@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
     <sys_properties action="INSERT_OR_UPDATE">
         <choices/>
-        <description>This property controls whether type expectations are executed in code within the application&#13;
-&#13;
-True enables type expectations&#13;
-False disables type expectations</description>
+        <description>If expectations are allowed, should type expectations be checked?</description>
         <ignore_cache>false</ignore_cache>
         <is_private>false</is_private>
         <name>x_240055_colledge.expect.types</name>
@@ -14,14 +11,14 @@ False disables type expectations</description>
         <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
         <sys_created_on>2018-10-11 22:19:15</sys_created_on>
         <sys_id>de655a5adb092300d06853184b96195c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_240055_colledge.expect.types</sys_name>
         <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
         <sys_policy/>
         <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
         <sys_update_name>sys_properties_de655a5adb092300d06853184b96195c</sys_update_name>
         <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
-        <sys_updated_on>2018-10-11 22:19:15</sys_updated_on>
+        <sys_updated_on>2018-10-12 11:38:24</sys_updated_on>
         <type>boolean</type>
         <value>true</value>
         <write_roles/>

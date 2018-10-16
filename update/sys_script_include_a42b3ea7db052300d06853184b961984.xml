@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_240055_colledge.Student</api_name>
+        <client_callable>false</client_callable>
+        <description>Utility functions for handling students</description>
+        <name>Student</name>
+        <script><![CDATA[var Student = Class.create();
+Student.prototype = {
+    initialize: function() {
+		this.student = Student.getCurrentStudent();
+    },
+	
+	isNull: function() {
+		return this.student === null;
+	},
+	
+	getGR: function() {
+		return this.student;
+	},
+	
+	
+
+    type: 'Student'
+};
+
+Student.getCurrentStudent = function () {
+	// gets the student that refers to the current logged in user
+	var grStudent = new GlideRecord('x_240055_colledge_student');
+	grStudent.addActiveQuery();
+	grStudent.addQuery('student_id', gs.getUserID());
+	grStudent.setLimit(1);
+	
+	grStudent.query();
+	if(grStudent.next()) {
+		return grStudent;
+	} 
+	
+	return null;
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-15 22:32:54</sys_created_on>
+        <sys_id>a42b3ea7db052300d06853184b961984</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Student</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_script_include_a42b3ea7db052300d06853184b961984</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-15 23:03:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

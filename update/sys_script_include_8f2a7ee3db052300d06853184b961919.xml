@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_240055_colledge.Housing</api_name>
+        <client_callable>false</client_callable>
+        <description>Utility functions for dealing with housing</description>
+        <name>Housing</name>
+        <script><![CDATA[var Housing = Class.create();
+Housing.prototype = {
+    initialize: function() {
+		this._grStudent = Student.getCurrentStudent();
+		
+		// TODO :  We will cache these values when possible.
+		this._grStudentRoom = undefined;
+		this._grStudentFloor = undefined;
+		this._grStudentBuilding = undefined;
+		this._grStudentCampus = undefined;
+    },
+	
+	getStudentRoom: function() {
+		return this._grStudent.room_assignment;
+	},
+	
+	getStudentFloor: function() {
+		return this.getStudentRoom().floor;
+	},
+	
+	getStudentBuilding: function() {
+		return this.getStudentFloor().building;
+	},
+	
+	getStudentCampus: function() {
+		return this.getStudentBuilding().campus;
+	},
+
+    type: 'Housing'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-15 22:13:31</sys_created_on>
+        <sys_id>8f2a7ee3db052300d06853184b961919</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Housing</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_script_include_8f2a7ee3db052300d06853184b961919</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-15 23:02:07</sys_updated_on>
+    </sys_script_include>
+</record_update>

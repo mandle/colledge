@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
     <sys_properties action="INSERT_OR_UPDATE">
         <choices/>
-        <description>Are any expectations run?&#13;
-True enables expectations.&#13;
-False disables.</description>
+        <description>Should expectations be allowed at run-time?</description>
         <ignore_cache>false</ignore_cache>
         <is_private>false</is_private>
         <name>x_240055_colledge.expect.all</name>
@@ -13,14 +11,14 @@ False disables.</description>
         <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
         <sys_created_on>2018-10-12 03:56:30</sys_created_on>
         <sys_id>a1b22fd6dbc92300d06853184b961956</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_240055_colledge.expect.all</sys_name>
         <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
         <sys_policy/>
         <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
         <sys_update_name>sys_properties_a1b22fd6dbc92300d06853184b961956</sys_update_name>
         <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
-        <sys_updated_on>2018-10-12 03:56:30</sys_updated_on>
+        <sys_updated_on>2018-10-12 11:38:04</sys_updated_on>
         <type>boolean</type>
         <value>true</value>
         <write_roles/>

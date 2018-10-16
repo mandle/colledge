@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="building_type" table="x_240055_colledge_building" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>building_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Academic</label>
+            <language>en</language>
+            <name>x_240055_colledge_building</name>
+            <sequence>2</sequence>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 21:56:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84c67e23db052300d06853184b9619c6</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 21:56:22</sys_updated_on>
+            <value>academic</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>building_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Housing</label>
+            <language>en</language>
+            <name>x_240055_colledge_building</name>
+            <sequence>2</sequence>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 21:56:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bcb63623db052300d06853184b96191a</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 21:56:38</sys_updated_on>
+            <value>housing</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>building_type</element>
+            <name>x_240055_colledge_building</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 21:56:07</sys_created_on>
+            <sys_id>04c6be23db052300d06853184b9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>building_type</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_choice_x_240055_colledge_building_building_type</sys_update_name>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 21:56:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

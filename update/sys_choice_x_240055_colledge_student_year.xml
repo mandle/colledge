@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="year" table="x_240055_colledge_student" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Freshman</label>
+            <language>en</language>
+            <name>x_240055_colledge_student</name>
+            <sequence>1</sequence>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 20:36:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e742a23dbc12300d06853184b96199c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 20:36:47</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sophomore</label>
+            <language>en</language>
+            <name>x_240055_colledge_student</name>
+            <sequence>2</sequence>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 20:36:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4184e623dbc12300d06853184b9619ae</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 20:37:02</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Junior</label>
+            <language>en</language>
+            <name>x_240055_colledge_student</name>
+            <sequence>3</sequence>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 20:37:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14946a23dbc12300d06853184b9619d4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 20:37:14</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Senior</label>
+            <language>en</language>
+            <name>x_240055_colledge_student</name>
+            <sequence>4</sequence>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 20:37:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eaa4ae23dbc12300d06853184b96195b</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 20:37:27</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>year</element>
+            <name>x_240055_colledge_student</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 20:36:27</sys_created_on>
+            <sys_id>89842e23dbc12300d06853184b961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>year</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_choice_x_240055_colledge_student_year</sys_update_name>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 20:36:27</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

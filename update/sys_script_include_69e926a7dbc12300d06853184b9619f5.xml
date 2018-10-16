@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_240055_colledge.GetUserContactNumber</api_name>
+        <client_callable>false</client_callable>
+        <description>Get User contact number through glide record</description>
+        <name>GetUserContactNumber</name>
+        <script><![CDATA[var GetUserContactNumber = Class.create();
+GetUserContactNumber.prototype = {
+    
+   initialize: function(){
+		var gr = new GlideRecord('sys_user');
+		gr.addQuery('user_name', gs.getUserName());
+		gr.query();
+		if(!gr.hasNext()) {
+			gs.addErrorMessage("No user found");
+		}
+		while(gr.next()){
+			return gr.mobile_phone;
+		}},
+	
+	
+
+    type: 'GetUserContactNumber'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-15 21:11:29</sys_created_on>
+        <sys_id>69e926a7dbc12300d06853184b9619f5</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>GetUserContactNumber</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_script_include_69e926a7dbc12300d06853184b9619f5</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-15 22:33:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

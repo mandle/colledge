@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices>Semester=semester, Quarters=quarter</choices>
+        <description>Allows university to decide how they do their scheduling (???) Do they do quarters or semester ... -__-</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_240055_colledge.general.semester.quarter.choice</name>
+        <read_roles/>
+        <suffix>general.semester.quarter.choice</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-15 18:30:15</sys_created_on>
+        <sys_id>0b864e2bdb412300d06853184b9619e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_240055_colledge.general.semester.quarter.choice</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_properties_0b864e2bdb412300d06853184b9619e7</sys_update_name>
+        <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-15 18:30:15</sys_updated_on>
+        <type>choicelist</type>
+        <value>semester</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=0b864e2bdb412300d06853184b9619e7"/>
+</record_update>

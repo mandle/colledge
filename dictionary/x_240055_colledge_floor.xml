@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Floor" max_length="40" name="x_240055_colledge_floor" type="collection">
+        <element label="Building" max_length="32" name="building" reference="x_240055_colledge_building" type="reference"/>
+        <element label="Compose Level" mandatory="true" max_length="32" name="compose_level" reference="fm_level" type="reference"/>
+        <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Male only" sequence="100" value="male_only"/>
+                <element inactive_on_update="false" label="Female only" sequence="200" value="female_only"/>
+                <element inactive_on_update="false" label="Coed" sequence="300" value="coed"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="compose_level"/>
+        </index>
+        <index name="index2">
+            <element name="building"/>
+        </index>
+    </element>
+</database>

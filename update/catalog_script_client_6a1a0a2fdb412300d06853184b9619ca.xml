@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Housing Application">5f31c263db412300d06853184b96194d</cat_item>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Housing System Properties</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	var systemProps = ['housing.show.buildingpreferences', 'housing.show.roommate', 'housing.show.room.type'];
+	var fieldNames = ['building_preference', 'roommate_preference', 'room_type_preference', ];
+	for (var i = 0; i < 3; i++){
+		hideField(fieldNames[i], systemProps[i]);
+		
+	}
+  
+	function hideField(name, property) {
+		var ga = new GlideAjax('x_240055_colledge.AjaxMetadata');
+		ga.addParam('sysparm_name', "getProperty");
+		ga.addParam('sysparm_property', property);
+		ga.getXML(getResponse);
+		
+		function getResponse(response){
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			console.log("LOOK " + answer);
+			if(answer == "false"){
+				console.log('name');
+				g_form.setDisplay(name, false);
+			}
+		}
+	}
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-15 19:03:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6a1a0a2fdb412300d06853184b9619ca</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Housing System Properties</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>catalog_script_client_6a1a0a2fdb412300d06853184b9619ca</sys_update_name>
+        <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-15 21:17:01</sys_updated_on>
+        <table/>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

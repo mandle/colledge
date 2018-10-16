@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="28fdb56fdb012300d06853184b961992" sys_domain="global" table="x_240055_colledge_building" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>9574ce27db412300d06853184b96199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>5d74ce27db412300d06853184b96199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>campus</element>
+            <position>2</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>dd74ce27db412300d06853184b96199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>5174ce27db412300d06853184b96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compose_building</element>
+            <position>4</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>d174ce27db412300d06853184b96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>5574ce27db412300d06853184b96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <position>6</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>d574ce27db412300d06853184b96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compose_building.assignable_area</element>
+            <position>7</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>5974ce27db412300d06853184b96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compose_building.assigned</element>
+            <position>8</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>d974ce27db412300d06853184b96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compose_building.current_occupancy</element>
+            <position>9</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>5d74ce27db412300d06853184b96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compose_building.location</element>
+            <position>10</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>dd74ce27db412300d06853184b96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compose_building.max_occupancy</element>
+            <position>11</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>5174ce27db412300d06853184b96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compose_building.percent_occupied</element>
+            <position>12</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 18:16:23</sys_created_on>
+            <sys_id>d174ce27db412300d06853184b96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 18:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>building_type</element>
+            <position>13</position>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 21:55:50</sys_created_on>
+            <sys_id>c0b6fe23db052300d06853184b96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 21:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_240055_colledge_building</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-15 17:47:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28fdb56fdb012300d06853184b961992</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_240055_colledge_building</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_ui_section_28fdb56fdb012300d06853184b961992</sys_update_name>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-15 17:47:56</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
