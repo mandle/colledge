@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Organization Memberships" max_length="40" name="x_240055_colledge_m2m_organizations_users" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// '{{User}} in {{Organization Name}}&#13;&#10;&#9;return current.user.getDisplayValue() + ' -&gt; ' + current.organization.getDisplayValue();  // return the calculated value&#13;&#10;&#13;&#10;})(current);" display="true" label="Name" max_length="100" name="name" type="string" virtual="true"/>
+        <element label="Organization" mandatory="true" max_length="32" name="organization" reference="x_240055_colledge_organization" type="reference"/>
+        <element choice="1" default="10" label="Privilege Level" mandatory="true" max_length="40" name="privilege_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rank 1" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Rank 2" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Rank 3" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Rank 4" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="Rank 5" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Rank 6" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="Rank 7" sequence="700" value="7"/>
+                <element inactive_on_update="false" label="Rank 8" sequence="800" value="8"/>
+                <element inactive_on_update="false" label="Rank 9" sequence="900" value="9"/>
+                <element inactive_on_update="false" label="Rank 10" sequence="1000" value="10"/>
+            </choice>
+        </element>
+        <element label="User" mandatory="true" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="organization"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

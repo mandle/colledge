@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="classes" label="Classes" language="en" table="x_240055_colledge_m2m_co_requisites_classes">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>classes</element>
+            <help/>
+            <hint/>
+            <label>Classes</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_co_requisites_classes</name>
+            <plural>Classes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 20:49:05</sys_created_on>
+            <sys_id>8c24f34adb152300d06853184b9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Classes</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_documentation_x_240055_colledge_m2m_co_requisites_classes_classes_en</sys_update_name>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 20:49:05</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

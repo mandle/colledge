@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include">
+    <sp_js_include action="INSERT_OR_UPDATE">
+        <display_name>Logging</display_name>
+        <source>local</source>
+        <sys_class_name>sp_js_include</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-18 04:06:51</sys_created_on>
+        <sys_id>43ae5298db192300d06853184b96198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Logging</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_ui_script display_value="x_240055_colledge.Logging">116cd5eedbcd2300d06853184b9619ba</sys_ui_script>
+        <sys_update_name>sp_js_include_43ae5298db192300d06853184b96198b</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-18 04:06:51</sys_updated_on>
+        <url/>
+    </sp_js_include>
+</record_update>

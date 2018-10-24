@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_snapshot">
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>test</internal_name>
+        <label_cache>[{"name":"9bf3f186-290f-4781-b1b0-09b5ffeae6d2.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"9bf3f186-290f-4781-b1b0-09b5ffeae6d2.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"Created or Updated_1.current.student_id.email","label":"Trigger➛Student Record➛Student ID➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created or Updated_1.current.student_id.last_name","label":"Trigger➛Student Record➛Student ID➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"Created or Updated_1.current.student_id.first_name","label":"Trigger➛Student Record➛Student ID➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Student Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_240055_colledge_student","column_name":"sys_id"},{"name":"6fc25f02-d586-4c1e-b012-127582b27546.table_name","label":"1.1➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name"},{"name":"6fc25f02-d586-4c1e-b012-127582b27546.record","label":"1.1➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current.student_id","label":"Trigger➛Student Record➛Student ID","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_240055_colledge_student","column_name":"student_id"},{"name":"Created or Updated_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time"},{"name":"aaf74b29-6882-410f-bca8-720a518b42f7.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"aaf74b29-6882-410f-bca8-720a518b42f7.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"Created or Updated_1.current.student_id.user_name","label":"Trigger➛Student Record➛Student ID➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name"},{"name":"Created or Updated_1.table_name","label":"Trigger➛Student Table","reference":"x_240055_colledge_student","reference_display":"Student","type":"table_name","base_type":"table_name"},{"name":"12bfac59-4c51-4bec-8b32-a173c67d2d72.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"12bfac59-4c51-4bec-8b32-a173c67d2d72.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"Created or Updated_1.current","label":"Trigger➛Student Record","reference":"x_240055_colledge_student","reference_display":"Student","type":"reference","base_type":"reference"}]</label_cache>
+        <master>true</master>
+        <name>Test</name>
+        <outputs/>
+        <parent_flow/>
+        <remote_trigger_id/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-16 20:45:02</sys_created_on>
+        <sys_id>6c103b3fdbc12300d06853184b961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_hub_flow_snapshot_6c103b3fdbc12300d06853184b961987</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-16 20:45:02</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6c103b3fdbc12300d06853184b961987"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6c103b3fdbc12300d06853184b961987"/>
+</record_update>

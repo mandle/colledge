@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>Expect</name>
+        <script><![CDATA[Expect = { };
+Expect.execute = function execute(scriptType, name, fn) {
+	try {
+		if(typeof scriptType !== 'string') {
+			throw new Error('Expect.execute: type ' + scriptType + ' was not a string');
+		}
+		if(typeof name !== 'string') {
+			throw new Error('Expect.execute: name ' + name + ' was not a string');
+		}
+		return fn();
+	} catch (error) {
+		var errorMessage = 'Type: ' + scriptType + ', \n' +
+						   'Name: ' + name + ', \n' +
+						   error;
+		alert(errorMessage);
+		console.log(errorMessage);
+	}
+};
+
+Expect.datatype = {
+	
+	_generateCheck: function _generateCheck(typeStr) {
+		return function(val) {
+				var type = typeof val;
+				if(type === typeStr) {
+					return;
+				} else {
+					throw new Error('expected ' + typeStr +
+								   ', got ' + type + ' as ' + val);
+				}
+			};
+	},
+	
+	isString: function isString(val) {
+		return (Expect.datatype._generateCheck('string'))(val);
+	},
+	
+	isNumber: function isNumber(val) {
+		return (Expect.datatype._generateCheck('number'))(val);
+	},
+	
+	isBool: function isBool(val) {
+		return (Expect.datatype._generateCheck('boolean'))(val);
+	},
+	
+	isUndefined: function isUndefined(val) {
+		return (Expect.datatype._generateCheck('undefined'))(val);
+	},
+	
+	isFunction: function isFunction(val) {
+		return (Expect.datatype._generateCheck('function'))(val);
+	},
+	
+	isObject: function isObject(val) {
+		Expect.datatype.isNotNull(val);
+		(Expect.datatype._generateCheck('object'))(val);
+	},
+	
+	isNotNull: function isNotNull(val) {
+		
+		if(val === null) {
+			throw new Error('expected not null');
+		}
+	},
+	
+	isNotUndefined: function isNotUndefined(val) {
+		
+		if(val === undefined) {
+			throw new Error('expected not undefined');
+		}
+	},
+	
+	isValid: function isValid(val) {
+		
+		Expect.datatype.isNotNull(val);
+		Expect.datatype.isNotUndefined(val);
+	},
+	
+	isInstanceOf: function isInstanceOf(val, classConstructor) {
+		Expect.datatype.isFunction(classFn);
+		Expect.datatype.isObject(val);
+		
+		if(! (val instanceof classConstructor)) {
+			throw new Error('expected value of class ' + functionName(classConstructor)
+						  + ' but received the object ' + val);
+		}
+		
+		function functionName( func ) {
+			// Credit to SO answer at https://stackoverflow.com/questions/2648293/how-to-get-the-function-name-from-within-that-function
+			
+			// Match:
+			// - ^          the beginning of the string
+			// - function   the word 'function'
+			// - \s+        at least some white space
+			// - ([\w\$]+)  capture one or more valid JavaScript identifier characters
+			// - \s*        optionally followed by white space (in theory there won't be any here,
+			//              so if performance is an issue this can be omitted[1]
+			// - \(         followed by an opening brace
+			//
+			var result = /^function\s+([\w\$]+)\s*\(/.exec( func.toString() );
+
+			return  result  ?  result[ 1 ]  :  ''; // for an anonymous function there won't be a match
+		}
+	},
+	
+	isArray: function isArray(arr) {
+		Expect.isInstanceOf(Array);
+	}
+};
+
+Expect.datatypes = {
+	areSame: function areSame(a, b) {
+		
+		var typeA = typeof a;
+		var typeB = typeof b;
+		if(typeA !== typeB) {
+			throw new Error(a + ' had type ' + typeA + ' but ' + b + ' had type ' + typeB);
+		}
+		
+		if(a === null && b !== null) {
+			throw new Error(a + ' had type null' + ' but '
+							+ b + ' had type ' + typeB);
+		}
+		
+		if(a !== null && b === null) {
+			throw new Error(a + ' had type ' + typeA + ' but '
+							+ b + ' had type null');
+		}
+	}
+};
+
+// Private class to be used only by Expect.
+var _Actual = function _Actual(val) {
+	this.actual = val;
+	this._check = function _check(comparison, operator, expected) {
+		
+		Expect.datatype.isBool(comparison);
+		Expect.datatype.isString(operator);
+		Expect.datatypes.areSame(this.actual, expected);
+		if(!comparison) {
+			throw new Error('the following did not hold: ' + this.actual + ' ' + operator + ' ' +  expected + ' (actual vs expected)');
+		}
+	};
+	
+	this.eq = function eq(expected) {
+		this._check(this.actual === expected, '===', expected);
+	};
+	
+	this.neq = function neq(expected) {
+		this._check(this.actual !== expected, '!==', expected);
+	};
+	
+	this.gt = function gt(expected) {
+		this._check(this.actual > expected, '>', expected);
+	};
+	
+	this.gte = function gte(expected) {
+		this._check(this.actual >= expected, '>=', expected);
+	};
+	
+	this.lt = function lt(expected) {
+		this._check(this.actual < expected, '<', expected);
+	};
+	
+	this.lte = function lte(expected) {
+		this._check(this.actual <= expected, '<=', expected);
+	};
+};
+
+Expect.actual = function actual(val) {
+	return new _Actual(val);
+};
+]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-18 04:15:33</sys_created_on>
+        <sys_id>f09fdad8db192300d06853184b961971</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Expect</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_angular_provider_f09fdad8db192300d06853184b961971</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-18 04:22:57</sys_updated_on>
+        <type>service</type>
+    </sp_angular_provider>
+</record_update>

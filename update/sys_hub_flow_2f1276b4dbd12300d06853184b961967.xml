@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Gives approval for advising for students</description>
+        <internal_name>approval_for_advising</internal_name>
+        <label_cache>[{"name":"{{static.42de9e70db912300d06853184b96192b}}","label":"Professor","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"fa50d50d-863b-413a-9159-84ea4459172c.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice"},{"name":"9d537b6d-a9cb-4153-a82e-4857058bc965.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"b8e15445-4280-4498-9df2-d1427757145f.appointments","label":"1➛appointments","reference":"x_240055_colledge_appointment_reservation","reference_display":"Appointment Reservation","type":"reference","base_type":"reference"},{"name":"b8e15445-4280-4498-9df2-d1427757145f.what_is_the_advisng_appointment_for","label":"1➛what_is_the_advisng_appointment_for","reference":"","reference_display":"what_is_the_advisng_appointment_for","type":"choice","base_type":"choice"},{"name":"Service Catalog_1.request_item.assigned_to","label":"Trigger➛Requested Item Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"assigned_to"},{"name":"Service Catalog_1.request_item","label":"Trigger➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference"},{"name":"Updated_1.current","label":"Trigger➛Appointment Reservation Record","reference":"x_240055_colledge_appointment_reservation","reference_display":"Appointment Reservation","type":"reference","base_type":"reference"},{"name":"{{static.4d50f816db012300d06853184b9619e2}}","label":"Cody Dotson","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Created_1.current","label":"Trigger➛Appointment Reservation Record","reference":"x_240055_colledge_appointment_reservation","reference_display":"Appointment Reservation","type":"reference","base_type":"reference"},{"name":"491f748c-8ca7-47e4-a048-da98b5362a66.approval_state","label":"1➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice"},{"name":"f4a68f12-3a13-452f-9da6-594493902830.approval_state","label":"1➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice"}]</label_cache>
+        <latest_snapshot>f416beb8dbd12300d06853184b961942</latest_snapshot>
+        <master_snapshot>f416beb8dbd12300d06853184b961942</master_snapshot>
+        <name>Approval for advising</name>
+        <outputs/>
+        <remote_trigger_id>c75d65f1db512300d06853184b9619bd</remote_trigger_id>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-19 18:48:17</sys_created_on>
+        <sys_id>2f1276b4dbd12300d06853184b961967</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Approval for advising</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_hub_flow_2f1276b4dbd12300d06853184b961967</sys_update_name>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 18:11:47</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=2f1276b4dbd12300d06853184b961967"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2f1276b4dbd12300d06853184b961967"/>
+</record_update>

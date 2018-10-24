@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="room_type" table="x_240055_colledge_room" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Single</label>
+            <language>en</language>
+            <name>x_240055_colledge_room</name>
+            <sequence>100</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 16:47:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bfac0964db512300d06853184b961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 16:47:04</sys_updated_on>
+            <value>single</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Double</label>
+            <language>en</language>
+            <name>x_240055_colledge_room</name>
+            <sequence>200</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 16:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9adc4964db512300d06853184b9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 16:47:21</sys_updated_on>
+            <value>double</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>room_type</element>
+            <name>x_240055_colledge_room</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 16:47:04</sys_created_on>
+            <sys_id>d2cc4164db512300d06853184b96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>room_type</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_choice_x_240055_colledge_room_room_type</sys_update_name>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 16:47:04</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="scToggleData">c045f99a0b67320014ea425663673a25</sp_angular_provider>
+        <sp_widget display_value="Test catalog item">a7a7a2b8db912300d06853184b961971</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-19 18:02:41</sys_created_on>
+        <sys_id>a7a7a2b8db912300d06853184b961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scToggleData.Test catalog item</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_a7a7a2b8db912300d06853184b961979</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-19 18:02:41</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>

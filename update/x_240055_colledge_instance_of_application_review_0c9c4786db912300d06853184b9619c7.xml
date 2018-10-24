@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field>active</display_field>
+        <field_list>table,title,filter</field_list>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">7adccebddb912300d06853184b961950</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Application Review">d0d2effddb952300d06853184b961986</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:56:14</sys_created_on>
+        <sys_id>0c9c4786db912300d06853184b9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hello?</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>x_240055_colledge_instance_of_application_review_0c9c4786db912300d06853184b9619c7</sys_update_name>
+        <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 18:34:44</sys_updated_on>
+        <table>x_240055_colledge_organization_application_responses</table>
+        <title>Hello?</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"questions": {
+		"value": "application_questions",
+		"displayValue": "application_questions"
+	},
+	"response_text": {
+		"value": "responses",
+		"displayValue": "responses"
+	},
+	"applicant": {
+		"value": "user",
+		"displayValue": "user"
+	},
+	"owner": {
+		"value": "organization",
+		"displayValue": "organization"
+	}
+}]]></widget_parameters>
+    </sp_instance_table>
+    <sys_translated_text action="delete_multiple" query="documentkey=0c9c4786db912300d06853184b9619c7"/>
+</record_update>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>danger</color>
+        <css/>
+        <glyph>user-circle-o</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Schedule an appointment with your advisor</short_description>
+        <size>lg</size>
+        <sp_column display_value="3">390eea61dbd12300d06853184b96197b</sp_column>
+        <sp_page display_value="advising">54c94e28db152300d06853184b961938</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>Brandon.wing@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-22 02:26:22</sys_created_on>
+        <sys_id>8d2e6e61dbd12300d06853184b961907</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Advising</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_instance_link_8d2e6e61dbd12300d06853184b961907</sys_update_name>
+        <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-22 04:03:04</sys_updated_on>
+        <title>Advising</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Top Icon",
+		"displayValue": "Top Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=8d2e6e61dbd12300d06853184b961907"/>
+</record_update>

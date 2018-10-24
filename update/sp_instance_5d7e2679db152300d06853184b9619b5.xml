@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">7d2f6e79db152300d06853184b96191a</sp_column>
+        <sp_widget display_value="text widget">1b93ec19db512300d06853184b96192f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Brandon.wing@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-22 21:06:14</sys_created_on>
+        <sys_id>5d7e2679db152300d06853184b9619b5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_instance_5d7e2679db152300d06853184b9619b5</sys_update_name>
+        <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 04:48:33</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"text": {
+		"value": "dd8e2a79db152300d06853184b9619eb",
+		"displayValue": "organization look up"
+	},
+	"text_type": {
+		"value": "Heading 2",
+		"displayValue": "Heading 2"
+	},
+	"font_size": {
+		"value": null,
+		"displayValue": ""
+	},
+	"text_decoration": {
+		"value": "",
+		"displayValue": ""
+	},
+	"font_color": {
+		"value": "#f9f9f9",
+		"displayValue": "#f9f9f9"
+	},
+	"background_color": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=5d7e2679db152300d06853184b9619b5"/>
+</record_update>

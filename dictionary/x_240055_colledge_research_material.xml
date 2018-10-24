@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_ci" label="Research Material" max_length="40" name="x_240055_colledge_research_material" sizeclass="10" type="collection">
+        <element label="Author" max_length="40" name="author" type="string"/>
+        <element label="ISBN" max_length="30" name="isbn" type="string"/>
+        <element label="Pages" max_length="40" name="pages" type="integer"/>
+        <element label="Publish Date" max_length="40" name="publish_date" type="glide_date"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Digital" value="digital"/>
+                <element inactive_on_update="false" label="Physical" value="physical"/>
+            </choice>
+        </element>
+        <element label="Subject" max_length="30" name="subject" type="string"/>
+        <element label="Title" max_length="40" name="title" type="string"/>
+        <element choice="1" label="Type" max_length="20" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Article" value="article"/>
+                <element inactive_on_update="false" label="Journal" value="journal"/>
+                <element inactive_on_update="false" label="Novel" value="novel"/>
+            </choice>
+        </element>
+    </element>
+</database>

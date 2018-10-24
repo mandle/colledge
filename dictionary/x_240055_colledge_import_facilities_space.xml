@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Import Facilities space" max_length="40" name="x_240055_colledge_import_facilities_space" type="collection">
+        <element attributes="import_attribute_name=Building,edge_encryption_enabled=true" label="Building" max_length="40" name="u_building" type="string"/>
+        <element attributes="import_attribute_name=Floor,edge_encryption_enabled=true" label="Floor" max_length="40" name="u_floor" type="string"/>
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+    </element>
+</database>

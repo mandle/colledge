@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-17 21:33:25</sys_created_on>
+        <sys_id>7ea44510db552300d06853184b9619aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_240055_colledge_building</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_db_view_table_7ea44510db552300d06853184b9619aa</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-17 21:33:25</sys_updated_on>
+        <table>x_240055_colledge_building</table>
+        <variable_prefix>bp</variable_prefix>
+        <view display_value="x_240055_colledge_dbv_housing">fc23cd9cdb152300d06853184b961978</view>
+        <where_clause/>
+    </sys_db_view_table>
+</record_update>

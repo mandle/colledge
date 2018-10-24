@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Organization Positions" max_length="40" name="x_240055_colledge_organization_positions" type="collection">
+        <element label="Membership" max_length="32" name="membership" reference="x_240055_colledge_m2m_organizations_users" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Position" max_length="100" name="position" type="string"/>
+        <index name="index">
+            <element name="membership"/>
+        </index>
+    </element>
+</database>

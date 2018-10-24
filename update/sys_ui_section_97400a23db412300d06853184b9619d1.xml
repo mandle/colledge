@@ -3,224 +3,238 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>student_id</element>
             <position>0</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>12a1ce63db412300d06853184b961913</sys_id>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>cef8db06dbd12300d06853184b9619c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.first_name</element>
-            <position>1</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>92a1ce63db412300d06853184b961913</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.middle_name</element>
-            <position>2</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>16a1ce63db412300d06853184b961913</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.last_name</element>
-            <position>3</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>96a1ce63db412300d06853184b961913</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>secondary_student_id</element>
-            <position>4</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>1aa1ce63db412300d06853184b961913</sys_id>
+            <position>1</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>4af8df06dbd12300d06853184b961941</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.email</element>
-            <position>5</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>9aa1ce63db412300d06853184b961913</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.home_phone</element>
-            <position>6</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>1ea1ce63db412300d06853184b961913</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.mobile_phone</element>
-            <position>7</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>9ea1ce63db412300d06853184b961913</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.street</element>
-            <position>8</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>12a1ce63db412300d06853184b961914</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.city</element>
-            <position>9</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>92a1ce63db412300d06853184b961914</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.state</element>
-            <position>10</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>16a1ce63db412300d06853184b961914</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>student_id.zip</element>
-            <position>11</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>96a1ce63db412300d06853184b961914</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>campus</element>
-            <position>12</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>1aa1ce63db412300d06853184b961914</sys_id>
+            <position>2</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>caf8df06dbd12300d06853184b961941</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>building_address</element>
-            <position>13</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 18:04:10</sys_created_on>
-            <sys_id>9aa1ce63db412300d06853184b961914</sys_id>
+            <position>3</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>4ef8df06dbd12300d06853184b961941</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 18:04:10</sys_updated_on>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>year</element>
-            <position>14</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 20:36:08</sys_created_on>
-            <sys_id>1c742a23dbc12300d06853184b9619a3</sys_id>
+            <position>4</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>cef8df06dbd12300d06853184b961941</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 20:36:08</sys_updated_on>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>room_assignment</element>
-            <position>15</position>
-            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 22:00:45</sys_created_on>
-            <sys_id>bbc77e63db052300d06853184b961973</sys_id>
+            <position>5</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>42f8df06dbd12300d06853184b961942</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
-            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 22:00:45</sys_updated_on>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>6</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>c2f8df06dbd12300d06853184b961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>7</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>46f8df06dbd12300d06853184b961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>middle_name</element>
+            <position>8</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>c6f8df06dbd12300d06853184b961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>9</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>4af8df06dbd12300d06853184b961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>home_phone</element>
+            <position>10</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>caf8df06dbd12300d06853184b961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mobile_phone</element>
+            <position>11</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>4ef8df06dbd12300d06853184b961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>street</element>
+            <position>12</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>cef8df06dbd12300d06853184b961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>13</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>42f8df06dbd12300d06853184b961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>14</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>c2f8df06dbd12300d06853184b961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>zip</element>
+            <position>15</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>46f8df06dbd12300d06853184b961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>student_reference</element>
+            <position>16</position>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:50:26</sys_created_on>
+            <sys_id>c6f8df06dbd12300d06853184b961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_student" sys_domain="global" view="Default view">97400a23db412300d06853184b9619d1</sys_ui_section>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:50:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

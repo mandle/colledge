@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	c.numQuestions = 1;
+	c.questionLabels = ['1'];
+	c.addQuestion = function() {
+		this.numQuestions += 1;
+		this.questionLabels.push(this.numQuestions.toString());
+	}
+	c.questions = '';
+	c.gatherQuestionsAndSubmit = function() {
+		var inputs = document.getElementsByClassName('app-creator-question');
+		var gatheredQuestionsArray = [];
+		for(var i = 0; i < inputs.length; i++) {
+			gatheredQuestionsArray.push(inputs[i].value);
+		}
+		this.questions = gatheredQuestionsArray.join(',');
+		
+		this._submitQuestions(this.questions);
+	}
+	
+	c._submitQuestions = function(questions) {
+		this.data.newQuestions = questions;
+		this.server.update();
+		this._resetFields();
+	}
+	
+	c._resetFields = function() {
+		c.numQuestions = 1;
+		c.questionLabels = ['1'];
+		c.questions = '';
+		var inputs = document.getElementsByClassName('app-creator-question');
+		for(var i = 0; i < inputs.length; i++) {
+			inputs[i].value = '';
+		}
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>application_creator</id>
+        <internal>false</internal>
+        <link/>
+        <name>Application Creator</name>
+        <option_schema>[{"displayValue":"Table","name":"table","section":"Data","label":"Table","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"name":"storage_field","section":"Data","label":"Storage field","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+		if(input) {
+				saveQuestions(input.newQuestions);
+				data.questions = '';
+		} else {
+			data.questions = '';
+		}
+	
+		function saveQuestions(questions) {
+			Expect.datatype.isString(questions);
+			var tableName = getTableName();
+			Expect.datatype.isString(tableName);
+			saveQuestionsToTable(tableName, questions);
+			
+			function getTableName() {
+				var grTable = new GlideRecord('sys_db_object');
+				if( grTable.get(options.table) ) {
+					var x = grTable.name.toString();
+					Expect.datatype.isString(x);
+					Logging.info("Table name: " + x);
+					return x;
+				} else {
+					throw new Error("TABLE SID: " + options.table + 
+									" does not exist in sys_db_object");
+				}
+			}
+			
+			function saveQuestionsToTable(tableName, questions) {
+				Expect.datatype.isString(tableName);
+				Expect.datatype.isString(questions);
+				
+				var grStorage = new GlideRecord(tableName);
+				grStorage.initialize();
+				grStorage.setValue(options.storage_field, questions);
+				grStorage.insert();
+			}
+		}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-22 18:59:15</sys_created_on>
+        <sys_id>d9619af1dbd12300d06853184b9619c5</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Application Creator</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_widget_d9619af1dbd12300d06853184b9619c5</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-22 20:47:51</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <h1>
+     Application Creator:
+  </h1>
+  <h3>
+    Define your application questions here: {{c.questions}}
+  </h3>
+  <p>
+    Aggregate : {{c.data.questions}}
+  </p>
+  <p ng-repeat="label in c.questionLabels track by $index">
+    <label>
+      {{c.questionLabels[$index] + ".&nbsp; &nbsp;"}}
+      <input type="text" class="app-creator-question"/>
+    </label>
+  </p>
+  <button ng-click="c.addQuestion()">
+    Add Question
+  </button>
+  <button ng-click="c.gatherQuestionsAndSubmit()">
+    Submit
+  </button>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_240055_colledge.classes_user" name="x_240055_colledge.classes_user">97c1934edb912300d06853184b961979</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-23 18:19:06</sys_created_on>
+        <sys_id>97c1934edb912300d06853184b96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>97c1934edb912300d06853184b961979</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_embedded_help_role_97c1934edb912300d06853184b96197b</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 18:19:06</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

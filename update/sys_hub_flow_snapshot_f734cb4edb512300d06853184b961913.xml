@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_snapshot">
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Gives users to have the privilege to get a librarian to research any items from the library</description>
+        <internal_name>approval_for_librarian_to_research</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference"},{"name":"0926bd27-6899-42b5-94dc-587458f3f61d.Catalog Task","label":"1➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id"}]</label_cache>
+        <master>true</master>
+        <name>Approval for librarian to research</name>
+        <outputs/>
+        <parent_flow display_value="Approval for librarian to research">4172070edb512300d06853184b96196a</parent_flow>
+        <remote_trigger_id/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:19:54</sys_created_on>
+        <sys_id>f734cb4edb512300d06853184b961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval for librarian to research</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_hub_flow_snapshot_f734cb4edb512300d06853184b961913</sys_update_name>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:19:54</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f734cb4edb512300d06853184b961913"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f734cb4edb512300d06853184b961913"/>
+</record_update>

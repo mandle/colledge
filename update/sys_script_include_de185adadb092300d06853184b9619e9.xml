@@ -24,10 +24,10 @@ Expect.execute = function execute(scriptType, name, fn) {
 		if(typeof name !== 'string') {
 			throw new Error('Expect.execute: name ' + name + ' was not a string');
 		}
-		fn();
+		return fn();
 	} catch (error) {
-		var errorMessage = 'Type: ' + scriptType + '\n' +
-						   'Name: ' + name + '\n' +
+		var errorMessage = 'Type: ' + scriptType + ', \n' +
+						   'Name: ' + name + ', \n' +
 						   error;
 		gs.addErrorMessage(errorMessage);
 		gs.error(errorMessage);
@@ -52,49 +52,57 @@ Expect._shouldCheckActual = function() {
 Expect.datatype = {
 	
 	_generateCheck: function _generateCheck(typeStr) {
-		return Expect._shouldCheckType() ? function(val) {
+		return Expect._shouldCheckType() ? function(val, tag) {
 				var type = typeof val;
 				if(type === typeStr) {
 					return;
 				} else {
-					throw new Error('expected ' + typeStr +
-								   ', got ' + type + ' as ' + val);
+					var error_message = 'expected ' + typeStr +
+								   ', got ' + type + ' as ' + val;
+					if(tag) {
+						error_message += ' tag: ' + tag;
+					}
+					throw new Error(error_message);
 				}
-			} : function(val) { };
+			} : function(val, tag) { };
 	},
 	
-	isString: function isString(val) {
-		return (Expect.datatype._generateCheck('string'))(val);
+	isString: function isString(val, tag) {
+		return (Expect.datatype._generateCheck('string'))(val, tag);
 	},
 	
-	isNumber: function isNumber(val) {
-		return (Expect.datatype._generateCheck('number'))(val);
+	isNumber: function isNumber(val, tag) {
+		return (Expect.datatype._generateCheck('number'))(val, tag);
 	},
 	
-	isBool: function isBool(val) {
-		return (Expect.datatype._generateCheck('boolean'))(val);
+	isBool: function isBool(val, tag) {
+		return (Expect.datatype._generateCheck('boolean'))(val, tag);
 	},
 	
-	isUndefined: function isUndefined(val) {
-		return (Expect.datatype._generateCheck('undefined'))(val);
+	isUndefined: function isUndefined(val, tag) {
+		return (Expect.datatype._generateCheck('undefined'))(val, tag);
 	},
 	
-	isFunction: function isFunction(val) {
-		return (Expect.datatype._generateCheck('function'))(val);
+	isFunction: function isFunction(val, tag) {
+		return (Expect.datatype._generateCheck('function'))(val, tag);
 	},
 	
-	isObject: function isObject(val) {
-		Expect.datatype.isNotNull(val);
-		(Expect.datatype._generateCheck('object'))(val);
+	isObject: function isObject(val, tag) {
+		Expect.datatype.isNotNull(val, tag);
+		(Expect.datatype._generateCheck('object'))(val, tag);
 	},
 	
-	isNotNull: function isNotNull(val) {
+	isNotNull: function isNotNull(val, tag) {
 		if(! Expect._shouldCheckType()) {
 			return;
 		}
 		
 		if(val === null) {
-			throw new Error('expected not null');
+			var error_message = 'expected not null';
+			if(!tag) {
+				error_message += ' tag: ' + tag;
+			}
+			throw new Error(error_message);
 		}
 	},
 	
@@ -104,24 +112,28 @@ Expect.datatype = {
 		}
 		
 		if(val === undefined) {
-			throw new Error('expected not undefined');
+			var error_message = 'expected not undefined';
+			if(!tag) {
+				error_message += ' tag: ' + tag;
+			}
+			throw new Error(error_message);
 		}
 	},
 	
-	isValid: function isValid(val) {
+	isValid: function isValid(val, tag) {
 		if(! Expect._shouldCheckType()) {
 			return;
 		}
 		
-		Expect.datatype.isNotNull(val);
-		Expect.datatype.isNotUndefined(val);
+		Expect.datatype.isNotNull(val, tag);
+		Expect.datatype.isNotUndefined(val, tag);
 	},
 	
 	isInstanceOf: function isInstanceOf(val, classConstructor) {
 		if(! Expect._shouldCheckType()) {
 			return;
 		}
-		Expect.datatype.isFunction(classFn);
+		Expect.datatype.isFunction(classConstructor);
 		Expect.datatype.isObject(val);
 		
 		if(! (val instanceof classConstructor)) {
@@ -148,7 +160,7 @@ Expect.datatype = {
 	},
 	
 	isArray: function isArray(arr) {
-		Expect.isInstanceOf(Array);
+		Expect.datatype.isInstanceOf(arr, Array);
 	}
 };
 
@@ -232,13 +244,13 @@ Expect.actual = function actual(val) {
         <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
         <sys_created_on>2018-10-11 22:59:07</sys_created_on>
         <sys_id>de185adadb092300d06853184b9619e9</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Expect</sys_name>
         <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
         <sys_update_name>sys_script_include_de185adadb092300d06853184b9619e9</sys_update_name>
-        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
-        <sys_updated_on>2018-10-12 12:32:03</sys_updated_on>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-18 18:10:48</sys_updated_on>
     </sys_script_include>
 </record_update>

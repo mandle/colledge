@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>Logging</name>
+        <script><![CDATA[Logging = {};
+Logging.info = function(message) {
+	if(typeof message !== 'string') {
+		throw new Error("Logging.info expected a string, but got " + message);
+	}
+
+	console.log(errorMessage);
+};
+Logging.warn = function(message) {
+	if(typeof message !== 'string') {
+		throw new Error("Logging.warn expected a string, but got " + message);
+	}
+	console.log(message);
+
+};
+Logging.critical = function(message) {
+	if(typeof message !== 'string') {
+		throw new Error("Logging.critical expected a string, but got " + message);
+	}
+	console.log(message);
+};]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-18 04:26:00</sys_created_on>
+        <sys_id>fb9262d8db192300d06853184b961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Logging</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_angular_provider_fb9262d8db192300d06853184b961960</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-18 04:26:00</sys_updated_on>
+        <type>service</type>
+    </sp_angular_provider>
+</record_update>

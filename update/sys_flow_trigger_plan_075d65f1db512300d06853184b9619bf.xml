@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_flow_trigger_plan">
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"075d65f1db512300d06853184b9619bf","name":"plan"}}</plan>
+        <plan_id>2f1276b4dbd12300d06853184b961967</plan_id>
+        <snapshot>f416beb8dbd12300d06853184b961942</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-22 16:21:49</sys_created_on>
+        <sys_id>075d65f1db512300d06853184b9619bf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>c75d65f1db512300d06853184b9619bd</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_flow_trigger_plan_075d65f1db512300d06853184b9619bf</sys_update_name>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-22 18:55:07</sys_updated_on>
+        <trigger display_value="">c75d65f1db512300d06853184b9619bd</trigger>
+    </sys_flow_trigger_plan>
+</record_update>

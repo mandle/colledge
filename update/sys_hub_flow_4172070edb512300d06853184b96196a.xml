@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Gives users to have the privilege to get a librarian to research any items from the library</description>
+        <internal_name>approval_for_librarian_to_research</internal_name>
+        <label_cache>[{"name":"693235f3-9259-41d5-b1fe-16e7715b57af.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"62b67fc0-4f97-4991-ad9e-b939963a05ce.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"c23a24a4-3cfc-491d-b48e-9cb95f113dd8.Catalog Task","label":"3➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id"},{"name":"Service Catalog_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time"},{"name":"{{static.bb65b231db552300d06853184b9619c5}}","label":"Library Staff","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"b8990835-9dc3-4458-8676-456b8b6f1847.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice"},{"name":"83e6d762-0e16-4d15-9aec-0104ee3d6e2e.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"c963ebbb-e467-4f49-9050-0ea503517f95.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"c963ebbb-e467-4f49-9050-0ea503517f95.Record","label":"2➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id"},{"name":"881b1042-c06d-47d5-8872-1be09d52bd69.Catalog Task","label":"2➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id"},{"name":"1592bc1d-f3fe-4cdb-8ebf-3e144030bf78.contact_number","label":"1➛contact_number","reference":"","reference_display":"contact_number","type":"string","base_type":"string"},{"name":"1592bc1d-f3fe-4cdb-8ebf-3e144030bf78.email","label":"1➛email","reference":"","reference_display":"email","type":"email","base_type":"email"},{"name":"1592bc1d-f3fe-4cdb-8ebf-3e144030bf78.name","label":"1➛name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"1592bc1d-f3fe-4cdb-8ebf-3e144030bf78.research_description","label":"1➛research_description","reference":"","reference_display":"research_description","type":"multi_small","base_type":"multi_small"},{"name":"Service Catalog_1.request_item","label":"Trigger➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference"},{"name":"0926bd27-6899-42b5-94dc-587458f3f61d.Catalog Task","label":"1➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id"}]</label_cache>
+        <latest_snapshot>3cea8b06db912300d06853184b9619a0</latest_snapshot>
+        <master_snapshot>f734cb4edb512300d06853184b961913</master_snapshot>
+        <name>Approval for librarian to research</name>
+        <outputs/>
+        <remote_trigger_id>8044cb4edb512300d06853184b961969</remote_trigger_id>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:12:03</sys_created_on>
+        <sys_id>4172070edb512300d06853184b96196a</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Approval for librarian to research</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_hub_flow_4172070edb512300d06853184b96196a</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:48:56</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=4172070edb512300d06853184b96196a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4172070edb512300d06853184b96196a"/>
+</record_update>

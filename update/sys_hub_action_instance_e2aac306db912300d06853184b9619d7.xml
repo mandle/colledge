@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <comment/>
+        <compiled_snapshot display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approval for librarian to research">f734cb4edb512300d06853184b961913</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>e2aac306db912300d06853184b9619d7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_hub_action_instance_e2aac306db912300d06853184b9619d7</sys_update_name>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <ui_id>c23a24a4-3cfc-491d-b48e-9cb95f113dd8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e2aac306db912300d06853184b9619d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e2aac306db912300d06853184b9619d7</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>2aaac306db912300d06853184b9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <value>assignment_group={"display":"Library Staff","value":"bb65b231db552300d06853184b9619c5"}</value>
+        <variable display_value="">7751fd0e73141300612c273ffff6a7ac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e2aac306db912300d06853184b9619d7</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>66aac306db912300d06853184b9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <value>ba022631db152300d06853184b96198f</value>
+        <variable display_value="">f751fd0e73141300612c273ffff6a7b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e2aac306db912300d06853184b9619d7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>a2aac306db912300d06853184b9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <value>Please do research</value>
+        <variable display_value="">3751fd0e73141300612c273ffff6a7a6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e2aac306db912300d06853184b9619d7</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>eeaac306db912300d06853184b9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <value>bc81c779db552300d06853184b9619c4,78a546e7db412300d06853184b9619ca,55e586e7db412300d06853184b961940,6ff58ee7db412300d06853184b9619d9</value>
+        <variable display_value="">7b51fd0e73141300612c273ffff6a7be</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e2aac306db912300d06853184b9619d7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_fields</field>
+        <id>e2aac306db912300d06853184b9619d7</id>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>6eaac306db912300d06853184b9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_requested_item</field>
+        <id>e2aac306db912300d06853184b9619d7</id>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>e6aac306db912300d06853184b9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_short_description</field>
+        <id>e2aac306db912300d06853184b9619d7</id>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>26aac306db912300d06853184b9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>e2aac306db912300d06853184b9619d7</id>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>62aac306db912300d06853184b9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>e2aac306db912300d06853184b9619d7</id>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 17:47:56</sys_created_on>
+        <sys_id>aaaac306db912300d06853184b9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 17:47:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>

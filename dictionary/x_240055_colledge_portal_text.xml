@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Portal Text" max_length="40" name="x_240055_colledge_portal_text" type="collection">
+        <element choice="3" default="english" label="Language" max_length="40" name="language" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="English" value="english"/>
+                <element inactive_on_update="false" label="Spanish" value="spanish"/>
+            </choice>
+        </element>
+        <element label="Name" mandatory="true" max_length="255" name="name" type="string_full_utf8"/>
+        <element label="Portal Page" max_length="32" name="portal_page" reference="sp_page" type="reference"/>
+        <element label="Text" mandatory="true" max_length="4000" name="text" type="string_full_utf8"/>
+        <index name="index">
+            <element name="portal_page"/>
+        </index>
+    </element>
+</database>

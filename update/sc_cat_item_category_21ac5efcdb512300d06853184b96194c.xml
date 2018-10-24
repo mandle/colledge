@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Advising Appintment">000c16fcdb512300d06853184b96193d</sc_cat_item>
+        <sc_category display_value="appointments">971c96fcdb512300d06853184b9619e1</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-19 17:14:29</sys_created_on>
+        <sys_id>21ac5efcdb512300d06853184b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>appointments.Advising Appintment</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sc_cat_item_category_21ac5efcdb512300d06853184b96194c</sys_update_name>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-19 17:14:29</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

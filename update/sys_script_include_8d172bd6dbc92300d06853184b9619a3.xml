@@ -31,18 +31,36 @@ Metadata.getProperty = function getProperty(name) {
 	
 	return prop;
 	
+};
+
+Metadata.scopedTableNames = {
+	STUDENT: 'x_240055_colledge_student', 
+	FACULTY: 'x_240055_colledge_faculty',
+	ROOM: 'x_240055_colledge_room',
+	FLOOR: 'x_240055_colledge_floor',
+	BUILDING: 'x_240055_colledge_building',
+	CAMPUS: 'x_240055_colledge_campus',
+	ORG_POSITION: 'x_240055_colledge_organization_positions',
+	ORG_MEMBER: 'x_240055_colledge_m2m_organizations_users',
+	ORG: 'x_240055_colledge_organization',
+	CHARTER: 'x_240055_colledge_charter'
+	
+};
+
+Metadata.globalTableNames = {
+	
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
         <sys_created_on>2018-10-12 04:17:27</sys_created_on>
         <sys_id>8d172bd6dbc92300d06853184b9619a3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Metadata</sys_name>
         <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
         <sys_update_name>sys_script_include_8d172bd6dbc92300d06853184b9619a3</sys_update_name>
         <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
-        <sys_updated_on>2018-10-12 05:58:58</sys_updated_on>
+        <sys_updated_on>2018-10-22 04:59:59</sys_updated_on>
     </sys_script_include>
 </record_update>

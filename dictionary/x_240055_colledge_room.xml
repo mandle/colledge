@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Room" max_length="40" name="x_240055_colledge_room" type="collection">
-        <element label="Compose Space" mandatory="true" max_length="32" name="compose_space" reference="fm_space" type="reference"/>
-        <element label="Floor" max_length="32" name="floor" reference="x_240055_colledge_floor" type="reference"/>
+        <element display="true" label="Compose Space" mandatory="true" max_length="32" name="compose_space" reference="fm_space" type="reference"/>
         <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Coed" value="coed"/>
@@ -10,11 +9,14 @@
             </choice>
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Room type" max_length="40" name="room_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Single" sequence="100" value="single"/>
+                <element inactive_on_update="false" label="Double" sequence="200" value="double"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="compose_space"/>
-        </index>
-        <index name="index2">
-            <element name="floor"/>
         </index>
     </element>
 </database>

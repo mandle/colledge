@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Import Buildings" max_length="40" name="x_240055_colledge_import_buildings" type="collection">
+        <element attributes="import_attribute_name=Campus,edge_encryption_enabled=true" label="Campus" max_length="40" name="u_campus" type="string"/>
+        <element attributes="import_attribute_name=current occupany" label="current occupany" max_length="40" name="u_current_occupany" type="integer"/>
+        <element attributes="import_attribute_name=Floors" label="Floors" max_length="40" name="u_floors" type="integer"/>
+        <element attributes="import_attribute_name=gross area" label="gross area" max_length="40" name="u_gross_area" type="integer"/>
+        <element attributes="import_attribute_name=Location,edge_encryption_enabled=true" label="Location" max_length="40" name="u_location" type="string"/>
+        <element attributes="import_attribute_name=Max occupancy" label="Max occupancy" max_length="40" name="u_max_occupancy" type="integer"/>
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=usable area" label="usable area" max_length="40" name="u_usable_area" type="integer"/>
+        <element attributes="import_attribute_name=utilization maximum" label="utilization maximum" max_length="40" name="u_utilization_maximum" type="integer"/>
+        <element attributes="import_attribute_name=utilization minimum" label="utilization minimum" max_length="40" name="u_utilization_minimum" type="integer"/>
+        <element attributes="import_attribute_name=% occupied" label="% occupied" max_length="40" name="u___occupied" type="integer"/>
+    </element>
+</database>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance_table</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>table,filter,title</field_list>
+        <has_preview>false</has_preview>
+        <id>redirection_list</id>
+        <internal>false</internal>
+        <link/>
+        <name>Redirection List</name>
+        <option_schema>[{"displayValue":"Page","name":"page","section":"Data","label":"Page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"hint":"comma-separated list of parameter names to map the field values to.","name":"parameter_names","section":"Data","label":"Parameter names","type":"string"},{"hint":"Values to map to the parameter names in key-value pairs for the URL.","name":"parameter_values","section":"Data","label":"Parameter values","type":"field_list"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	var grTable = queryForTableRecords ();
+	
+	function queryForTableRecords() {
+		Logging.info("table: " + $sp.getValue('table'));
+		var gr = new GlideRecord($sp.getValue('table'));
+		gr.query();
+	}
+	
+	data.list = ['Hi', 'there'];
+	data.page = getPageID();
+	Logging.info("Page: " + data.page);
+	
+	function getPageID() {
+		var grPage = new GlideRecord('sp_page');
+		var success = grPage.get(options.page);
+		if(!success) {
+			throw new Error ("Page doesn't exist!");
+		}
+		return grPage.id.toString();
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-23 20:11:00</sys_created_on>
+        <sys_id>1e6b6b42db152300d06853184b96199d</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Redirection List</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_widget_1e6b6b42db152300d06853184b96199d</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 20:55:01</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <h1>
+    Redirection List
+  </h1>
+  Page: {{ c.data.page }}
+  <table>
+    <thead>
+    	<tr>
+      	<th>
+        
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+    	<tr ng-repeat="row in c.data.list">
+        <td>{{row}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>]]></template>
+    </sp_widget>
+</record_update>

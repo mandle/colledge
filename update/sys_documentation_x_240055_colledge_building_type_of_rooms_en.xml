@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="type_of_rooms" label="Type of Rooms" language="en" table="x_240055_colledge_building">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>type_of_rooms</element>
+            <help/>
+            <hint/>
+            <label>Type of Rooms</label>
+            <language>en</language>
+            <name>x_240055_colledge_building</name>
+            <plural>Type of Rooms</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 17:40:48</sys_created_on>
+            <sys_id>19199960db912300d06853184b9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Type of Rooms</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_documentation_x_240055_colledge_building_type_of_rooms_en</sys_update_name>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 17:40:48</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

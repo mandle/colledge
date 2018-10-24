@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	c.questions = c.data.questions.split(',');
+	
+	c.submitResponses = function() {
+		var responseArray = _gatherResponses();
+		this.data.response = responseArray.join(',');
+		this.server.update();
+		
+		function _gatherResponses() {
+			var responses = document.
+					getElementsByClassName('app-presenter-response');
+			var responseArray = [];
+			for(var i = 0; i < responses.length; i++) {
+				responseArray.push(responses[i].value);
+			}
+			return responseArray;
+		}
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>application_presenter</id>
+        <internal>false</internal>
+        <link/>
+        <name>Application Presenter</name>
+        <option_schema>[{"displayValue":"Table","name":"question_table","section":"Data","label":"Question table","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"hint":"The field where the application questions are stored in encoded format","name":"question_field","section":"Data","label":"Question field","type":"string"},{"displayValue":"Organization","hint":"The sys_id of the application's owner, that you want to fetch","name":"owner","section":"Data","label":"Application Owner","type":"string","value":"x_240055_colledge_organization","ed":{"reference":"x_240055_colledge_organization"}},{"hint":"The name of the field where the owner is stored.","name":"owner_field","section":"Data","label":"Owner Field","type":"string"},{"displayValue":"Table","hint":"The table to store the responses into","name":"response_table","section":"Data","label":"Response table","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"hint":"The field in the response table to store responses in.","name":"response_field","section":"Data","label":"Response field","type":"string"},{"hint":"Provide the name of the field to store the response owner sys_id in. This is the same sys_id as the owner of the questions.","name":"response_owner_field","section":"Data","label":"Response Owner Field","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	var grQuestion = getQuestionGR();
+	Expect.datatype.isObject(grQuestion);
+	
+	data.questions = grQuestion.getValue(options.question_field.toString());
+	
+	if(input) {
+		Expect.datatype.isString(input.response, "input.response");
+		saveResponse(input.response, grQuestion.sys_id.toString());
+		
+	} else {
+		data.response = '';
+	}
+	
+// ************** FUNCTION DEFINITIONS ****************/
+	
+	function saveResponse(response, questionSid) {
+		Expect.datatype.isString(response);
+		Expect.datatype.isString(questionSid);
+		var tableName = getTableName(options.response_table);
+		Expect.datatype.isString(tableName);
+		saveResponseToTable(tableName, response, questionSid);
+		
+		function saveResponseToTable(tableName, response, questionSid) {
+			Expect.datatype.isString(tableName);
+			Expect.datatype.isString(response);
+			Expect.datatype.isString(response);
+			
+			var grTable = new GlideRecord(tableName);
+			grTable.initialize();
+			grTable.setValue(options.response_field, 
+											 response );
+			grTable.setValue(options.response_owner_field,
+											 options.owner);
+			grTable.setValue('user', gs.getUserID());
+			grTable.setValue('application_questions', questionSid);
+			grTable.insert();
+		}
+	}
+	
+	function getQuestionGR() {
+		var tableName = getTableName(options.question_table);
+		Expect.datatype.isString(tableName);
+		var questionsGR = getQuestionsFromTable(tableName);
+		Expect.datatype.isObject(questionsGR);
+		Expect.datatype.isInstanceOf(questionsGR, GlideRecord);
+		return questionsGR;
+		
+		function getQuestionsFromTable(tableName) {
+			Expect.datatype.isString(tableName);
+			var grQuestions = new GlideRecord(tableName);
+			grQuestions.addActiveQuery();
+			grQuestions.setLimit(1);
+			grQuestions.addQuery(options.owner_field, options.owner);
+			grQuestions.orderByDesc('sys_updated_on');
+			grQuestions.query();
+			if(grQuestions.next()) {
+				return grQuestions;
+			} else {
+				throw new Error ("No questions found!");
+			}	
+		}
+	}
+		
+	function getTableName(tableSid) {
+		Expect.datatype.isString(tableSid);
+		var grTable = new GlideRecord('sys_db_object');
+		if( grTable.get(tableSid) ) {
+			var x = grTable.name.toString();
+			Expect.datatype.isString(x);
+			Logging.info("Table name: " + x);
+			return x;
+		} else {
+			throw new Error("TABLE SID: " + options.table + 
+											" does not exist in sys_db_object");
+		}
+	}
+	
+	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-22 20:50:34</sys_created_on>
+        <sys_id>7fda26b5db152300d06853184b961906</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>Application Presenter</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_widget_7fda26b5db152300d06853184b961906</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 00:54:02</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <h1>
+    Application Presenter
+  </h1>
+  <h3>
+    Present your application questions here: {{c.data.response}}
+  </h3>
+  <p ng-repeat="q in c.questions track by $index">
+      {{ ($index + 1).toString() + '.&nbsp;&nbsp;' + q }}
+    <br/>
+    <textarea class="app-presenter-response">
+    </textarea>
+  </p>
+  <button ng-click="c.submitResponses()">
+    Submit Responses
+  </button>
+</div>]]></template>
+    </sp_widget>
+</record_update>

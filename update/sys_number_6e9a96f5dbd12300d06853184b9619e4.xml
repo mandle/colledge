@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_240055_colledge_application_question">x_240055_colledge_application_question</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>APP</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-22 19:39:29</sys_created_on>
+        <sys_id>6e9a96f5dbd12300d06853184b9619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>APP</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_number_6e9a96f5dbd12300d06853184b9619e4</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-22 19:39:29</sys_updated_on>
+    </sys_number>
+</record_update>

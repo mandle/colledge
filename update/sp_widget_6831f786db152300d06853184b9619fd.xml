@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>img{
+ height:400px;
+  width:400px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>organization_redirect</id>
+        <internal>false</internal>
+        <link/>
+        <name>organization redirect</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var sysID = $sp.getParameter('sys_id');
+	var gr = new GlideRecord('x_240055_colledge_organization');
+	gr.addQuery('sys_id', sysID);
+	gr.query();
+	
+	while(gr.next()){
+		data.options = {"name":gr.name.getDisplayValue(),
+									  "description": gr.description.getDisplayValue(),
+									 "advisor": gr.advisor.getDisplayValue(),
+									 "meeting_room":gr.meeting_room.getDisplayValue(),
+									 "logo":gr.logo.getDisplayValue()};
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Brandon.wing@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-23 20:36:16</sys_created_on>
+        <sys_id>6831f786db152300d06853184b9619fd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>organization redirect</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_widget_6831f786db152300d06853184b9619fd</sys_update_name>
+        <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 20:52:43</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <h1>
+    {{data.options.name}}
+  </h1>
+  <img src="{{data.options.logo}}">
+  <p>
+    {{data.options.description}}
+  </p>
+  <p>
+    Meeting Room: {{data.options.meeting_room}}
+  </p>
+  <p>
+    Feel free to contact {{data.options.advisor}} for more information
+  </p>
+</div>]]></template>
+    </sp_widget>
+</record_update>

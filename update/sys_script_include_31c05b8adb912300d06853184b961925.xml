@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_240055_colledge.ApplicationText</api_name>
+        <client_callable>false</client_callable>
+        <description>This script include contains the code for processing application text, from its form as an array to its form as a string.</description>
+        <name>ApplicationText</name>
+        <script><![CDATA[var ApplicationText = Class.create();
+ApplicationText.prototype = {
+    initialize: function() {
+    },
+	
+
+    type: 'ApplicationText'
+};
+
+ApplicationText.encodeArray = function(arr) {
+	Expect.datatype.isArray(arr);
+	return arr.join(',');
+};
+
+ApplicationText.decodeString = function(str) {
+	Expect.datatype.isString(str);
+	return str.split(',');
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-23 18:20:11</sys_created_on>
+        <sys_id>31c05b8adb912300d06853184b961925</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ApplicationText</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_script_include_31c05b8adb912300d06853184b961925</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 18:27:07</sys_updated_on>
+    </sys_script_include>
+</record_update>

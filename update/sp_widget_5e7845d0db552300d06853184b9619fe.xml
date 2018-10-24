@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	console.log("RUNNING");
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>database_view_list</id>
+        <internal>false</internal>
+        <link/>
+        <name>Database View List</name>
+        <option_schema>[{"displayValue":"Database View","name":"database_view","section":"other","label":"Database View","type":"reference","value":"sys_db_view","ed":{"reference":"sys_db_view"}},{"name":"columns","section":"other","label":"Columns","type":"string"},{"name":"headers","section":"other","label":"Headers","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var name = getDBViewName(options.database_view);
+	var headers = options.headers.split(',');
+	var col_names = options.columns.split(',');
+	configureDataObject(name, headers, col_names);
+	
+	function getDBViewName(sys_id) {
+		Expect.datatype.isString(sys_id);
+		var grDBV = new GlideRecord('sys_db_view');
+		grDBV.addQuery('sys_id', sys_id);
+		grDBV.setLimit(1);
+		grDBV.query();
+		if(grDBV.next()) {
+			var x = grDBV.getValue('name');
+			return x;
+		} else {
+			throw new Error('View not found');
+		}
+	}
+	
+	function configureDataObject(name, headers, col_names) {
+		Expect.datatype.isString(name);
+		Expect.datatype.isArray(headers);
+		Expect.datatype.isArray(col_names);
+		
+		data.headers = headers;
+		data.rows = [];
+		
+		var grDBView = new GlideRecord(name);
+		grDBView.query();
+		while(grDBView.next()) {
+			var columns = [];
+			for(var i = 0; i < col_names.length; i++) {
+				columns.push(grDBView.getValue(col_names[i]));
+			}
+			data.rows.push(columns);
+		}
+		
+	}
+	
+	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-17 21:49:45</sys_created_on>
+        <sys_id>5e7845d0db552300d06853184b9619fe</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>Database View List</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_widget_5e7845d0db552300d06853184b9619fe</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-18 16:20:19</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  {{c.data.works}}
+  <table>
+    <thead>
+      <tr>
+      	<th ng-repeat="header in c.data.headers">{{header}}</th>
+      </tr>
+    </thead>
+    	<tr ng-repeat="row in c.data.rows">
+    		<td ng-repeat="col in row">
+        	{{col}}
+        </td>
+    	</tr>
+    <tbody>
+    </tbody>
+  </table>
+</div>]]></template>
+    </sp_widget>
+</record_update>

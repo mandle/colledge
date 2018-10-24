@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Pre-Requisites" max_length="40" name="x_240055_colledge_pre_requisites" type="collection">
+        <element label="College" max_length="32" name="college" reference="x_240055_colledge_colleges" type="reference"/>
+        <element label="Credit Hours" max_length="40" name="credit_hours" type="float"/>
+        <element label="Number" max_length="40" name="number" type="integer"/>
+        <element label="Subject" max_length="40" name="subject" type="string"/>
+        <element label="Title" max_length="40" name="title" type="string"/>
+        <index name="index">
+            <element name="college"/>
+        </index>
+    </element>
+</database>

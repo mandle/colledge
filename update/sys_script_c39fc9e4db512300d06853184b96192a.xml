@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_user</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>UserToStudent/Faculty</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var sgr = new GlideRecord('x_240055_colledge_student');
+	var studentRecord = sgr.get('student_reference', current.sys_id);
+	
+	var fgr = new GlideRecord('x_240055_colledge_faculty');
+	var facultyRecord = fgr.get('user_reference', current.sys_id);
+	
+	//If Record exists in student table, update the record
+	
+	if(studentRecord){
+		if(current.sys_updated_on > sgr.sys_updated_on){
+			sgr.first_name = current.first_name;
+			sgr.last_name = current.last_name;
+			sgr.student_id = current.user_name;
+			sgr.middle_name = current.middle_name;
+			sgr.email = current.email;
+			sgr.home_phone = current.home_phone;
+			sgr.mobile_phone = current.mobile_phone;
+			sgr.street = current.street;
+			sgr.city = current.city;
+			sgr.state = current.state;
+			sgr.zip = current.zip;
+			sgr.autoSysFields(false);
+			sgr.sys_updated_on = current.sys_updated_on;
+			sgr.update();
+		}}
+		
+		//If Record exists in faculty table, update the record
+		
+		if(facultyRecord){
+			if(current.sys_updated_on > fgr.sys_updated_on){
+				fgr.first_name = current.first_name;
+				fgr.last_name = current.last_name;
+				fgr.faculty_id = current.user_name;
+				fgr.middle_name = current.middle_name;
+				fgr.email = current.email;
+				fgr.home_phone = current.home_phone;
+				fgr.mobile_phone = current.mobile_phone;
+				fgr.street = current.street;
+				fgr.city = current.city;
+				fgr.state = current.state;
+				fgr.zip = current.zip;
+				fgr.autoSysFields(false);
+				fgr.sys_updated_on = current.sys_updated_on;
+				fgr.update();
+			}}
+		})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-18 17:09:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c39fc9e4db512300d06853184b96192a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>UserToStudent/Faculty</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_script_c39fc9e4db512300d06853184b96192a</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-18 17:33:10</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c39fc9e4db512300d06853184b96192a"/>
+</record_update>

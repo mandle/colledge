@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="x_240055_colledge_m2m_co-requisites_classes" max_length="40" name="x_240055_colledge_m2m_co_requisites_classes" type="collection">
+        <element label="Classes" max_length="32" name="classes" reference="x_240055_colledge_classes" type="reference"/>
+        <element label="Co-Requisites" max_length="32" name="co_requisites" reference="x_240055_colledge_co_requisites" type="reference"/>
+        <index name="index">
+            <element name="classes"/>
+        </index>
+        <index name="index2">
+            <element name="co_requisites"/>
+        </index>
+    </element>
+</database>

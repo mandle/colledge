@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field>active</display_field>
+        <field_list/>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">54180f42db912300d06853184b96198e</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Redirection List">1e6b6b42db152300d06853184b96199d</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-23 20:36:16</sys_created_on>
+        <sys_id>5c313b86db152300d06853184b961922</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>hi</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_instance_table_5c313b86db152300d06853184b961922</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 20:54:07</sys_updated_on>
+        <table>x_240055_colledge_organization_application_responses</table>
+        <title>hi</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"page": {
+		"value": "54c94e28db152300d06853184b961938",
+		"displayValue": "advising"
+	}
+}]]></widget_parameters>
+    </sp_instance_table>
+    <sys_translated_text action="delete_multiple" query="documentkey=5c313b86db152300d06853184b961922"/>
+</record_update>

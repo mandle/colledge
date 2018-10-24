@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <annotation/>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>studentusertest</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.student_id.sys_id","label":"Trigger➛Student Record➛Student ID➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id"},{"name":"19fee136-9ee0-4bad-a5e7-279ce049ef7a.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"19fee136-9ee0-4bad-a5e7-279ce049ef7a.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"Created or Updated_1.table_name","label":"Trigger➛Student Table","reference":"x_240055_colledge_student","reference_display":"Student","type":"table_name","base_type":"table_name"},{"name":"Created or Updated_1.current.sys_updated_on","label":"Trigger➛Student Record➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_240055_colledge_student","column_name":"sys_updated_on"},{"name":"Created or Updated_1.current.student_id","label":"Trigger➛Student Record➛Student ID","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_240055_colledge_student","column_name":"student_id"},{"name":"Created or Updated_1.current.first_name","label":"Trigger➛Student Record➛First Name","reference":"","reference_display":"First Name","type":"string","base_type":"string","parent_table_name":"x_240055_colledge_student","column_name":"first_name"},{"name":"Created or Updated_1.current.student_id.first_name","label":"Trigger➛Student Record➛Student ID➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"de89468f-4931-4c01-b5b9-2cb2b4f19559.record","label":"1.1➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"de89468f-4931-4c01-b5b9-2cb2b4f19559.table_name","label":"1.1➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name"},{"name":"Created or Updated_1.current","label":"Trigger➛Student Record","reference":"x_240055_colledge_student","reference_display":"Student","type":"reference","base_type":"reference"},{"name":"7c5cc66a-4ccc-4730-a074-3efa0f86c063.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"7c5cc66a-4ccc-4730-a074-3efa0f86c063.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"Created or Updated_1.current.last_name","label":"Trigger➛Student Record➛Last Name","reference":"","reference_display":"Last Name","type":"string","base_type":"string","parent_table_name":"x_240055_colledge_student","column_name":"last_name"},{"name":"Created or Updated_1.current.sys_created_by","label":"Trigger➛Student Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_240055_colledge_student","column_name":"sys_created_by"},{"name":"Created or Updated_1.current.student_id.sys_updated_on","label":"Trigger➛Student Record➛Student ID➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sys_user","column_name":"sys_updated_on"},{"name":"b1a2df56-cf36-4f29-932e-333ddbd6f15b.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"b1a2df56-cf36-4f29-932e-333ddbd6f15b.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"}]</label_cache>
+        <latest_snapshot>5cd9b018db152300d06853184b9619ae</latest_snapshot>
+        <master_snapshot>0311dcd4db912300d06853184b96190d</master_snapshot>
+        <name>StudentUserTest</name>
+        <outputs/>
+        <remote_trigger_id>6711dcd4db912300d06853184b961974</remote_trigger_id>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-17 17:36:16</sys_created_on>
+        <sys_id>497ec0d0db912300d06853184b961980</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name>StudentUserTest</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_hub_flow_497ec0d0db912300d06853184b961980</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-17 20:51:23</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=497ec0d0db912300d06853184b961980"/>
+    <sys_variable_value action="delete_multiple" query="document_key=497ec0d0db912300d06853184b961980"/>
+</record_update>

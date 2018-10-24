@@ -15,35 +15,43 @@ Logging.prototype = {
 };
 
 Logging._shouldLog = function() {
-	return Metadata.getProperty('log.all') === 'true';
+	var x = Metadata.getProperty('log.all') === 'true';
+	return x;
 };
 
 Logging._shouldLogVisible = function() {
-	return Logging._shouldLog() && Metadata.getProperty('log.all.visible') === 'true';
+	var x = Logging._shouldLog() && Metadata.getProperty('log.all.visible') === 'true';
+	return x;
 };
 
 Logging._shouldLogInfo = function() {
-	return Logging._shouldLog() && Metadata.getProperty('log.info') === 'true';
+	var x = Logging._shouldLog() && Metadata.getProperty('log.info') === 'true';
+	return x;
 };
 
 Logging._shouldLogInfoVisible = function() {
-	return Logging._shouldLogVisible() && Logging._shouldLogInfo() && Metadata.getProperty('log.info.visible') === true;
+	var x = Logging._shouldLogVisible() && Logging._shouldLogInfo() && Metadata.getProperty('log.info.visible') === 'true';
+	return x;
 };
 
 Logging._shouldLogWarn = function() {
-	return Logging._shouldLog() && Metadata.getProperty('log.warn') === 'true';
+	var x = Logging._shouldLog() && Metadata.getProperty('log.warn') === 'true';
+	return x;
 };
 
 Logging._shouldLogWarnVisible = function() {
-	return Logging._shouldLogVisible() && Logging._shouldLogWarn() && Metadata.getProperty('log.warn.visible') === true;
+	var x = Logging._shouldLogVisible() && Logging._shouldLogWarn() && Metadata.getProperty('log.warn.visible') === 'true';
+	return x;
 };
 
 Logging._shouldLogCritical = function() {
-	return Logging._shouldLog() && Metadata.getProperty('log.critical') === true;
+	var x = Logging._shouldLog() && Metadata.getProperty('log.critical') === 'true';
+	return x;
 };
 
 Logging._shouldLogCriticalVisible = function() {
-	return Logging._shouldLogVisible() && Logging._shouldLogCritical() && Metadata.getProperty('log.critical.visible') === true;
+	var x = Logging._shouldLogVisible() && Logging._shouldLogCritical() && Metadata.getProperty('log.critical.visible') === 'true';
+	return x;
 };
 
 Logging.info = function info(message) {
@@ -53,7 +61,10 @@ Logging.info = function info(message) {
 	}
 	
 	if(Logging._shouldLogInfoVisible()) {
+		gs.info("CAN LOG VISIBLE");
 		gs.addInfoMessage(message);
+	} else {
+		gs.info("COULDN'T LOG VISIBLE");
 	}
 };
 
@@ -82,13 +93,13 @@ Logging.critical = function critical(message) {
         <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
         <sys_created_on>2018-10-12 04:53:26</sys_created_on>
         <sys_id>ea5f2bdedbc92300d06853184b96191c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Logging</sys_name>
         <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
         <sys_update_name>sys_script_include_ea5f2bdedbc92300d06853184b96191c</sys_update_name>
         <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
-        <sys_updated_on>2018-10-12 12:34:29</sys_updated_on>
+        <sys_updated_on>2018-10-16 17:36:15</sys_updated_on>
     </sys_script_include>
 </record_update>

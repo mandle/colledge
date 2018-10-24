@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Appointment Reservation" max_length="40" name="x_240055_colledge_appointment_reservation" type="collection">
+        <element label="Booked?" max_length="40" name="booked" type="boolean"/>
+        <element label="End date" max_length="40" name="end_date" type="glide_date_time"/>
+        <element label="Faculty" max_length="32" name="faculty" reference="x_240055_colledge_faculty" type="reference"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Start date" max_length="40" name="start_date" type="glide_date_time"/>
+        <element label="Student" max_length="32" name="student" reference="x_240055_colledge_student" reference_qual="javascript:&quot;sys_id=&quot; + new Student().getSid();" type="reference" use_reference_qualifier="advanced"/>
+        <index name="index">
+            <element name="student"/>
+        </index>
+        <index name="index2">
+            <element name="faculty"/>
+        </index>
+    </element>
+</database>

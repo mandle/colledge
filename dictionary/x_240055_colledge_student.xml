@@ -2,9 +2,19 @@
     <element label="Student" max_length="40" name="x_240055_colledge_student" type="collection">
         <element label="Building Address" max_length="32" name="building_address" reference="x_240055_colledge_building" type="reference"/>
         <element label="Campus" max_length="32" name="campus" reference="x_240055_colledge_campus" type="reference"/>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="email" max_length="40" name="email" type="email"/>
+        <element label="First Name" max_length="20" name="first_name" type="string"/>
+        <element label="Home Phone" max_length="40" name="home_phone" type="phone_number_e164"/>
+        <element label="Last Name" max_length="30" name="last_name" type="string"/>
+        <element label="Middle Name" max_length="20" name="middle_name" type="string"/>
+        <element label="Mobile Phone" max_length="40" name="mobile_phone" type="phone_number_e164"/>
         <element label="Room Assignment" max_length="32" name="room_assignment" reference="x_240055_colledge_room" type="reference"/>
         <element label="Secondary Student ID" max_length="40" name="secondary_student_id" type="integer"/>
-        <element display="true" label="Student ID" max_length="32" name="student_id" reference="sys_user" type="reference"/>
+        <element label="State / Province" max_length="40" name="state" type="string"/>
+        <element label="Street" max_length="40" name="street" type="multi_two_lines"/>
+        <element label="Student ID" max_length="40" name="student_id" type="string"/>
+        <element display="true" label="Student Reference" max_length="32" name="student_reference" reference="sys_user" type="reference"/>
         <element choice="3" default="1" label="Year" max_length="40" name="year" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Freshman" sequence="1" value="1"/>
@@ -13,14 +23,15 @@
                 <element inactive_on_update="false" label="Senior" sequence="4" value="4"/>
             </choice>
         </element>
+        <element label="Zip / Postal Code" max_length="40" name="zip" type="string"/>
         <index name="index">
-            <element name="building_address"/>
+            <element name="student_reference"/>
         </index>
         <index name="index2">
-            <element name="campus"/>
+            <element name="building_address"/>
         </index>
         <index name="index3">
-            <element name="student_id"/>
+            <element name="campus"/>
         </index>
         <index name="index4">
             <element name="room_assignment"/>

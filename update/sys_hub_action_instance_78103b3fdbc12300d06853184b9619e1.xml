@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Test">6c103b3fdbc12300d06853184b961987</flow>
+        <order>2.1</order>
+        <parent_ui_id>2bc9a0bc-7939-49c0-b0b5-886037d02f57</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-16 20:45:03</sys_created_on>
+        <sys_id>78103b3fdbc12300d06853184b9619e1</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_hub_action_instance_78103b3fdbc12300d06853184b9619e1</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-16 21:01:06</sys_updated_on>
+        <ui_id>9bf3f186-290f-4781-b1b0-09b5ffeae6d2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=78103b3fdbc12300d06853184b9619e1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>78103b3fdbc12300d06853184b9619e1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-16 20:45:03</sys_created_on>
+        <sys_id>fc103b3fdbc12300d06853184b9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-16 20:45:03</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=78103b3fdbc12300d06853184b9619e1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>78103b3fdbc12300d06853184b9619e1</id>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-16 20:45:03</sys_created_on>
+        <sys_id>b8103b3fdbc12300d06853184b9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-16 20:45:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current.student_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>78103b3fdbc12300d06853184b9619e1</id>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-16 20:45:03</sys_created_on>
+        <sys_id>f4103b3fdbc12300d06853184b9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-16 20:45:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>78103b3fdbc12300d06853184b9619e1</id>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-16 20:45:03</sys_created_on>
+        <sys_id>7c103b3fdbc12300d06853184b9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-16 20:45:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>first_name={{Created or Updated_1.current.student_id.first_name}}^last_name={{Created or Updated_1.current.student_id.last_name}}^user_name={{Created or Updated_1.current.student_id}}^email={{Created or Updated_1.current.student_id.email}}</value>
+    </sys_element_mapping>
+</record_update>

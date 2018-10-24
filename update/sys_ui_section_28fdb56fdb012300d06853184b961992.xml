@@ -196,6 +196,62 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type_of_rooms</element>
+            <position>14</position>
+            <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 17:40:48</sys_created_on>
+            <sys_id>19199960db912300d06853184b9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 17:40:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>image</element>
+            <position>15</position>
+            <sys_created_by>Brandon.wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 20:25:48</sys_created_on>
+            <sys_id>1edef5acdbd12300d06853184b96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 20:25:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>16</position>
+            <sys_created_by>Brandon.wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 20:26:17</sys_created_on>
+            <sys_id>d1fefdacdbd12300d06853184b961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 20:26:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>building_description</element>
+            <position>17</position>
+            <sys_created_by>Brandon.wing@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 20:48:07</sys_created_on>
+            <sys_id>15f34624db152300d06853184b961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_240055_colledge_building" sys_domain="global" view="Default view">28fdb56fdb012300d06853184b961992</sys_ui_section>
+            <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 20:48:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

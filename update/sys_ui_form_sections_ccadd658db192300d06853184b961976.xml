@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="ccadd658db192300d06853184b961976" sys_domain="global" table="sys_hub_flow_input" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 04:01:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80add658db192300d06853184b96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="Default view">ccadd658db192300d06853184b961976</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sys_hub_flow_input" sys_domain="global" view="Default view">84add658db192300d06853184b96197b</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 04:01:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 04:01:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4cadd658db192300d06853184b96197a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="Default view">ccadd658db192300d06853184b961976</sys_ui_form>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_hub_flow_input" sys_domain="global" view="Default view">40add658db192300d06853184b961979</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 04:01:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 04:01:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c0add298db192300d06853184b9619fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="Default view">ccadd658db192300d06853184b961976</sys_ui_form>
+            <sys_ui_section caption="Choice List Specification" display_value="Choice List Specification" name="sys_hub_flow_input" sys_domain="global" view="Default view">80add298db192300d06853184b9619fc</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 04:01:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 04:01:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8cadd298db192300d06853184b9619fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="Default view">ccadd658db192300d06853184b961976</sys_ui_form>
+            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_hub_flow_input" sys_domain="global" view="Default view">84add658db192300d06853184b96197e</sys_ui_section>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 04:01:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sys_hub_flow_input</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-18 04:01:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ccadd658db192300d06853184b961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_hub_flow_input</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_ui_form_sections_ccadd658db192300d06853184b961976</sys_update_name>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-18 04:01:47</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

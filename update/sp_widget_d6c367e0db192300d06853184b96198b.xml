@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>my_simple_list</id>
+        <internal>false</internal>
+        <link/>
+        <name>My Simple List</name>
+        <option_schema>[{"displayValue":"Table","name":"table","section":"Data","label":"Table","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"hint":"Comma-separated list of field names, in the order you want them to display","name":"columns","section":"Data","label":"Columns","type":"string"},{"hint":"Enter an encoded query to run on the referenced table","name":"filter","section":"Data","label":"Filter","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var records = getRecords();
+	gs.addInfoMessage(Student.getCurrentStudent().sys_id.toString());
+	
+	function getRecords() {
+		var grDBObject = new GlideRecord('sys_db_object');
+		var success = grDBObject.get('sys_id', options.table);
+		if(!success) {
+			throw new Error("Table does not exist");
+		}
+		var grTable = new GlideRecord(grDBObject.name.toString());
+		if(options.filter) {
+			//grTable.addQuery(options.filter, Student.getCurrentStudent().sys_id.toString());
+			Logging.info("Running the filter " + options.filter);
+			grTable.addEncodedQuery(options.filter);
+		}
+		grTable.query();
+		var col_names = options.columns.split(',');
+		data.rows = [];
+		data.headers = [];
+		var first_iteration = true;
+		while(grTable.next()) {
+			var col_vals = [];
+			for(var i = 0; i < col_names.length; i++) {
+				if(first_iteration) {
+					data.headers.push(grTable[col_names[i]].getLabel());
+				}
+				col_vals.push(grTable[col_names[i]].getDisplayValue());
+			}
+			data.rows.push(col_vals);
+			first_iteration = false;
+		}
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-19 03:46:48</sys_created_on>
+        <sys_id>d6c367e0db192300d06853184b96198b</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>My Simple List</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_widget_d6c367e0db192300d06853184b96198b</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-19 05:13:35</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  TEST
+  <table>
+    <thead>
+    	<tr>
+        <th ng-repeat="header in c.data.headers">
+        	{{header}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+    	<tr ng-repeat="row in c.data.rows">
+        <td ng-repeat="cell in row">
+          {{cell}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>]]></template>
+    </sp_widget>
+</record_update>

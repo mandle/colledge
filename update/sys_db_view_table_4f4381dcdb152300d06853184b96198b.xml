@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>true</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-17 21:30:06</sys_created_on>
+        <sys_id>4f4381dcdb152300d06853184b96198b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>alm_building</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_db_view_table_4f4381dcdb152300d06853184b96198b</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-17 21:41:57</sys_updated_on>
+        <table>alm_building</table>
+        <variable_prefix>b</variable_prefix>
+        <view display_value="x_240055_colledge_dbv_housing">fc23cd9cdb152300d06853184b961978</view>
+        <where_clause>b_sys_id=bp_compose_building</where_clause>
+    </sys_db_view_table>
+</record_update>

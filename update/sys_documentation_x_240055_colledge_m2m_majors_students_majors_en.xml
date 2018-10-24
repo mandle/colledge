@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="majors" label="Majors" language="en" table="x_240055_colledge_m2m_majors_students">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>majors</element>
+            <help/>
+            <hint/>
+            <label>Majors</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_majors_students</name>
+            <plural>Majors</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 18:46:20</sys_created_on>
+            <sys_id>8e085fc2dbd12300d06853184b96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Majors</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_documentation_x_240055_colledge_m2m_majors_students_majors_en</sys_update_name>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 18:46:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

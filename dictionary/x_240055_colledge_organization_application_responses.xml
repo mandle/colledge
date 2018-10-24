@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_240055_colledge_application_response" label="Organization Application Responses" max_length="40" name="x_240055_colledge_organization_application_responses" type="collection">
+        <element label="Organization" max_length="32" name="organization" reference="x_240055_colledge_organization" type="reference"/>
+        <index name="index">
+            <element name="organization"/>
+        </index>
+    </element>
+</database>

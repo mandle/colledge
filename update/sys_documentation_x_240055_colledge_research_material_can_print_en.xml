@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="can_print" label="Can Print" language="en" table="x_240055_colledge_research_material">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>can_print</element>
+            <help/>
+            <hint/>
+            <label>Can Print</label>
+            <language>en</language>
+            <name>x_240055_colledge_research_material</name>
+            <plural>Can Prints</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-22 18:54:37</sys_created_on>
+            <sys_id>a9501ab1dbd12300d06853184b96192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Can Print</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_documentation_x_240055_colledge_research_material_can_print_en</sys_update_name>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-22 18:54:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

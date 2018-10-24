@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include">
+    <sp_js_include action="INSERT_OR_UPDATE">
+        <display_name>Expect</display_name>
+        <source>local</source>
+        <sys_class_name>sp_js_include</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-18 04:05:41</sys_created_on>
+        <sys_id>f83eda98db192300d06853184b9619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Expect</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_ui_script display_value="x_240055_colledge.Expect">12cd49e6dbcd2300d06853184b961952</sys_ui_script>
+        <sys_update_name>sp_js_include_f83eda98db192300d06853184b9619f6</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-18 04:05:41</sys_updated_on>
+        <url/>
+    </sp_js_include>
+</record_update>

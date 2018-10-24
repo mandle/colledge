@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>1</order>
+        <sc_cat_item display_value="Request Hardware From Library">2f0a6e75db152300d06853184b96196b</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-22 20:50:40</sys_created_on>
+        <sys_id>1dea6ab5db152300d06853184b961938</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Requestor Info.Request Hardware From Library</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>io_set_item_1dea6ab5db152300d06853184b961938</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-22 20:50:40</sys_updated_on>
+        <variable_set display_value="Requestor Info">2b75c2e7db412300d06853184b961910</variable_set>
+    </io_set_item>
+</record_update>

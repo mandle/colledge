@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	c.data.style = {"font-size" : "12px",
+									"color" : "",
+									"font-weight" : "",
+									"text-decoration" : "",
+									"font-style" : "",
+									"background-color" : ""};
+	
+	var text_types = {
+		"Paragraph": ["", ""],
+		"Heading 1": ["32px", "bold"],
+		"Heading 2": ["24px", "bold"],
+		"Heading 3": ["19px", "bold"],
+		"Heading 4": ["16px", "bold"],
+		"Heading 5": ["13px", "bold"],
+		"Heading 6": ["11px", "bold"]
+	};
+	c.data.style["font-size"] = text_types[c.options.text_type][0];
+	c.data.style["font-weight"] = text_types[c.options.text_type][1];
+	
+	
+	if(c.options.text_decoration == "Bold"){
+		c.data.style["font-weight"] = "bold";
+	}
+	if(c.options.text_decoration == "Underline"){
+		c.data.style["text-decoration"] = "underline";
+	}
+	if(c.options.text_decoration == "Italic"){
+		c.data.style["font-style"] = "italic";
+	}
+	
+	
+	if (c.options.font_size !== undefined && c.options.font_size !== null){
+		var fontSize = c.options.font_size.toString() + "px";
+		c.data.style["font-size"] = fontSize
+	}
+	
+	if(c.options.font_color !== undefined){
+		c.data.style["color"] = c.options.font_color.toString();
+	}
+	
+	if(c.options.background_color !== undefined){
+		c.data.style["background-color"] = c.options.background_color.toString();
+	}
+	
+	console.log("The style is: " + c.data.style);
+}
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>text_widget</id>
+        <internal>false</internal>
+        <link/>
+        <name>text widget</name>
+        <option_schema>[{"displayValue":"Portal Text","hint":"Select what text you wish to appear on this widget","name":"text","section":"other","label":"Text to use","type":"reference","value":"x_240055_colledge_portal_text","ed":{"reference":"x_240055_colledge_portal_text"}},{"hint":"Select the type of text that this is","name":"text_type","section":"other","default_value":"Paragraph","label":"Text Type","type":"choice","choices":[{"label":"Paragraph","value":"Paragraph"},{"label":"Heading 1","value":"Heading 1"},{"label":"Heading 2","value":"Heading 2"},{"label":"Heading 3","value":"Heading 3"},{"label":"Heading 4","value":"Heading 4"},{"label":"Heading 5","value":"Heading 5"},{"label":"Heading 6","value":"Heading 6"}]},{"hint":"Select the size of the font, or leave blank for default size","name":"font_size","section":"other","label":"Font Size","type":"integer"},{"hint":"Select if text decoration is desired, leave blank if not","name":"text_decoration","section":"other","default_value":"","label":"Text Decoration","type":"choice","choices":[{"label":"Bold","value":"Bold"},{"label":"Italic","value":"Italic"},{"label":"Underline","value":"Underline"}]},{"hint":"Give hexidecimal value, including hashtag","name":"font_color","section":"other","label":"Font color","type":"string"},{"hint":"Give hexidecimal value, including hashtag","name":"background_color","section":"other","label":"Background Color","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var gr = new GlideRecord('x_240055_colledge_portal_text');
+	gr.addQuery('sys_id', options.text);
+	gr.query();
+	
+	while(gr.next()){
+		data.text = gr.text.getDisplayValue();
+	}
+	console.log("This worked");
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Brandon.wing@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-20 21:42:39</sys_created_on>
+        <sys_id>1b93ec19db512300d06853184b96192f</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>text widget</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_widget_1b93ec19db512300d06853184b96192f</sys_update_name>
+        <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 03:16:45</sys_updated_on>
+        <template><![CDATA[<div ng-style="data.style">
+<!-- your widget template -->
+
+  <span ng-bind-html="data.text"></span>
+</div>]]></template>
+    </sp_widget>
+</record_update>

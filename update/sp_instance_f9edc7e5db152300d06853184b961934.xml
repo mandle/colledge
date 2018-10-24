@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">dd2742e4db152300d06853184b961967</sp_column>
+        <sp_widget display_value="text widget">1b93ec19db512300d06853184b96192f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Brandon.wing@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-22 04:45:08</sys_created_on>
+        <sys_id>f9edc7e5db152300d06853184b961934</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_instance_f9edc7e5db152300d06853184b961934</sys_update_name>
+        <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-22 04:46:59</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"text": {
+		"value": "6bd9c365db152300d06853184b961993",
+		"displayValue": "CollEDGE Housing"
+	},
+	"text_type": {
+		"value": "Heading 1",
+		"displayValue": "Heading 1"
+	},
+	"font_size": {
+		"value": 50,
+		"displayValue": "50"
+	},
+	"text_decoration": {
+		"value": "Underline",
+		"displayValue": "Underline"
+	},
+	"font_color": {
+		"value": "#fcc742",
+		"displayValue": "#fcc742"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=f9edc7e5db152300d06853184b961934"/>
+</record_update>

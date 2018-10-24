@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Import research material data" max_length="40" name="x_240055_colledge_import_research_material_data" type="collection">
+        <element attributes="import_attribute_name=Author,edge_encryption_enabled=true" label="Author" max_length="40" name="u_author" type="string"/>
+        <element attributes="import_attribute_name=Description,edge_encryption_enabled=true" label="Description" max_length="55" name="u_description" type="string"/>
+        <element attributes="import_attribute_name=ISBN,edge_encryption_enabled=true" label="ISBN" max_length="40" name="u_isbn" type="string"/>
+        <element attributes="import_attribute_name=Pages" label="Pages" max_length="40" name="u_pages" type="integer"/>
+        <element attributes="import_attribute_name=Publish date" label="Publish date" max_length="40" name="u_publish_date" type="glide_date"/>
+        <element attributes="import_attribute_name=State,edge_encryption_enabled=true" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="import_attribute_name=Subject,edge_encryption_enabled=true" label="Subject" max_length="40" name="u_subject" type="string"/>
+        <element attributes="import_attribute_name=Title,edge_encryption_enabled=true" label="Title " max_length="40" name="u_title" type="string"/>
+        <element attributes="import_attribute_name=Type,edge_encryption_enabled=true" label="Type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

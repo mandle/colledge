@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="pages" label="Pages" language="en" table="x_240055_colledge_research_material">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>pages</element>
+            <help/>
+            <hint/>
+            <label>Pages</label>
+            <language>en</language>
+            <name>x_240055_colledge_research_material</name>
+            <plural>Pages</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-22 19:00:31</sys_created_on>
+            <sys_id>bba11635dbd12300d06853184b9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Pages</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_documentation_x_240055_colledge_research_material_pages_en</sys_update_name>
+            <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-22 19:00:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -5,6 +5,44 @@
             <element>gender</element>
             <hint/>
             <inactive>false</inactive>
+            <label>female</label>
+            <language>en</language>
+            <name>x_240055_colledge_floor</name>
+            <sequence>0</sequence>
+            <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+            <sys_created_on>2018-10-16 18:54:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c1d65fbbdb812300d06853184b961911</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+            <sys_updated_on>2018-10-16 18:54:45</sys_updated_on>
+            <value>female</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>male</label>
+            <language>en</language>
+            <name>x_240055_colledge_floor</name>
+            <sequence>0</sequence>
+            <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+            <sys_created_on>2018-10-16 18:54:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05d65fbbdb812300d06853184b96190b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+            <sys_updated_on>2018-10-16 18:54:45</sys_updated_on>
+            <value>male</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Male only</label>
             <language>en</language>
             <name>x_240055_colledge_floor</name>

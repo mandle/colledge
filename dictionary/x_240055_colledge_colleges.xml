@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Colleges" max_length="40" name="x_240055_colledge_colleges" type="collection">
+        <element label="Building" max_length="32" name="building" reference="x_240055_colledge_building" type="reference"/>
+        <element label="Description" max_length="4000" name="description" type="journal"/>
+        <element label="Head" max_length="32" name="head" reference="x_240055_colledge_faculty" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <index name="index">
+            <element name="head"/>
+        </index>
+        <index name="index2">
+            <element name="building"/>
+        </index>
+    </element>
+</database>

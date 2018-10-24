@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>.custom-container {
+	padding: 0px 40px 0px 40px;
+}
+
+.white-background {
+ 	 background-color: #FFFFFF;
+}
+
+.margin-padding {
+  margin-top:4px;
+}
+
+.icon{
+ 	background-color: #f4f2f2; 
+  border-radius: 260px;
+  margin-bottom:5px;
+  
+}
+
+.extra-top {
+ margin-top:17px; 
+}
+
+.extra-padding{
+ padding-top:17px; 
+ padding-bottom:17px; 
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>home</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-17 20:15:27</sys_created_on>
+        <sys_id>b4e27010db152300d06853184b96198d</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>home</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_page_b4e27010db152300d06853184b96198d</sys_update_name>
+        <sys_updated_by>Brandon.wing@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-22 04:04:47</sys_updated_on>
+        <title>Home</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=b4e27010db152300d06853184b96198d"/>
+</record_update>

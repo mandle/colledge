@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="import rooms" max_length="40" name="x_240055_colledge_import_rooms" type="collection">
+        <element attributes="import_attribute_name=Compose Space,edge_encryption_enabled=true" label="Compose Space" max_length="40" name="u_compose_space" type="string"/>
+        <element attributes="import_attribute_name=Gender,edge_encryption_enabled=true" label="Gender" max_length="40" name="u_gender" type="string"/>
+        <element attributes="import_attribute_name=Roomtype,edge_encryption_enabled=true" label="Roomtype" max_length="40" name="u_roomtype" type="string"/>
+    </element>
+</database>

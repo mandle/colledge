@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Building" max_length="40" name="x_240055_colledge_building" type="collection">
+        <element label="Building Description" max_length="5000" name="building_description" type="string"/>
         <element choice="1" default="academic" label="Building Type" max_length="40" name="building_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Academic" sequence="2" value="academic"/>
                 <element inactive_on_update="false" label="Housing" sequence="2" value="housing"/>
             </choice>
         </element>
-        <element label="Campus" max_length="32" name="campus" reference="x_240055_colledge_campus" type="reference"/>
         <element display="true" label="Compose Building" mandatory="true" max_length="32" name="compose_building" reference="alm_building" type="reference"/>
         <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
             <choice>
@@ -15,11 +15,10 @@
                 <element inactive_on_update="false" label="Male only" value="male only"/>
             </choice>
         </element>
+        <element label="Image" max_length="40" name="image" type="user_image"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Type of Rooms" max_length="4000" name="type_of_rooms" type="glide_list"/>
         <index name="index">
-            <element name="campus"/>
-        </index>
-        <index name="index2">
             <element name="compose_building"/>
         </index>
     </element>

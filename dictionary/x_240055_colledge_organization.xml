@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Organization" max_length="40" name="x_240055_colledge_organization" type="collection">
+        <element label="Advisor" max_length="32" name="advisor" reference="x_240055_colledge_faculty" type="reference"/>
+        <element label="Charter" max_length="32" name="charter" reference="x_240055_colledge_charter" type="reference"/>
+        <element default="Add a description here" label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Logo" max_length="40" name="logo" type="user_image"/>
+        <element label="Meeting Room" max_length="32" name="meeting_room" reference="x_240055_colledge_room" type="reference"/>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="advisor"/>
+        </index>
+        <index name="index2">
+            <element name="charter"/>
+        </index>
+        <index name="index3">
+            <element name="meeting_room"/>
+        </index>
+    </element>
+</database>

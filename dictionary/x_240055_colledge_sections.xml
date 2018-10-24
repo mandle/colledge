@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Sections" max_length="40" name="x_240055_colledge_sections" type="collection">
+        <element label="Class" max_length="32" name="class" reference="x_240055_colledge_classes" type="reference"/>
+        <element label="CRN" max_length="40" name="crn" type="string"/>
+        <element label="Faculty" max_length="32" name="faculty" reference="x_240055_colledge_faculty" type="reference"/>
+        <element label="Number" max_length="40" name="number" type="string"/>
+        <element label="Schedule" max_length="32" name="schedule" reference="x_240055_colledge_class_schedules" type="reference"/>
+        <index name="index">
+            <element name="schedule"/>
+        </index>
+        <index name="index2">
+            <element name="class"/>
+        </index>
+        <index name="index3">
+            <element name="faculty"/>
+        </index>
+    </element>
+</database>

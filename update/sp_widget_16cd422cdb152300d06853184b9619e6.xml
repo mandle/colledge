@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.result-container {
+ margin-top: 10px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>appointment_booking2</id>
+        <internal>false</internal>
+        <link/>
+        <name>Appointment_Booking2</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	if(input){
+	if (input.keywords != null && input.keywords != '')
+	data.items = getAppointments(input.keywords);
+	}
+	
+	function getAppointments(keywords) {
+		//Match input text to faculty names
+		var fc = new GlideRecord('x_240055_colledge_faculty');
+		fc.addQuery('first_name', 'CONTAINS', keywords);
+		fc.query();
+		
+		var flist = [];
+		//Store sys_id of each matching record
+		while(fc.next()){
+			flist.push(fc.sys_id);
+		}
+		
+		
+		//Get each reservation based on faculty sys_id in flist
+		var sc = new GlideRecord('x_240055_colledge_appointment_reservation');
+		sc.addActiveQuery();
+		//Get each record where the faculty sys_id is in flist
+	  sc.addQuery('faculty', 'IN', flist);
+		sc.setLimit(100);
+		sc.query();
+		
+		var results = [];
+		while (sc.next()) {
+			if (!$sp.canReadRecord(sc))
+				continue;
+
+			var item = {};
+			//Set displays of matched records
+			$sp.getRecordDisplayValues(item, sc, 'faculty,start_date,end_date,sys_id');
+			item.faculty = sc.getDisplayValue('faculty');
+			results.push(item);
+		}
+		return results;
+	}
+	})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-18 21:31:04</sys_created_on>
+        <sys_id>16cd422cdb152300d06853184b9619e6</sys_id>
+        <sys_mod_count>78</sys_mod_count>
+        <sys_name>Appointment_Booking2</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_widget_16cd422cdb152300d06853184b9619e6</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-19 22:05:51</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-primary">
+ <div class="panel-heading">Request an Appointment</div>
+ <div class="panel-body">
+   <input id="yes" class="form-control" type="search" placeholder="Start typing here to search Appointments" ng-model="c.data.keywords" ng-change="c.server.update()" ng-model-options="{debounce: 250}" />
+   <ul class="list-group result-container">
+     <li class="list-group-item" ng-repeat="item in c.data.items">
+       <a href>{{item.faculty}}</a><span class="pull-right" >{{item.start_date}}   -   {{item.end_date}}</span>
+     </li>
+   </ul>
+ </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

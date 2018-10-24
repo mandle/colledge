@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	
+	c.submitApproval = function() {
+		console.log("WAS PRESSED");
+		this.data.decision = 'approve';
+		this.server.update();
+	};
+	
+	c.submitRejection = function() {
+		console.log("WAS PRESSED");
+		this.data.decision = 'reject';
+		this.server.update();
+	};
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance_table</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>table,title,filter</field_list>
+        <has_preview>false</has_preview>
+        <id>application_review</id>
+        <internal>false</internal>
+        <link/>
+        <name>Application Review</name>
+        <option_schema>[{"name":"questions","section":"Data","label":"Questions","type":"field_name"},{"name":"response_text","section":"Data","label":"Response text","type":"field_name"},{"name":"applicant","section":"Data","label":"Applicant","type":"field_name"},{"name":"owner","section":"Data","label":"Owner","type":"field_name"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var grApp;
+	if(input) {
+		if(input.decision === 'approve') {
+			approveApplication();
+		} else {
+			rejectApplication();
+		}
+	} else {
+		grApp = getApplication();
+		Expect.datatype.isInstanceOf(grApp, GlideRecord);
+		data.questions = ApplicationText.decodeString(grApp[options.questions].getDisplayValue() );
+		data.responses = ApplicationText.decodeString(grApp.getValue(options.response_text));
+		data.owner = grApp[options.owner].getDisplayValue();
+		data.applicant = grApp[options.applicant].getDisplayValue();
+	}
+	data.table = options.table;
+	data.title = options.title;
+	data.decision = '';
+	
+	function approveApplication() {
+		var grApp = getApplication();
+		addApplicantAsMember(
+						grApp[options.owner].sys_id.toString(),
+						grApp[options.applicant].sys_id.toString());
+		notifyApplicant('approved');
+		inactivateApplication(grApp);
+		
+		function addApplicantAsMember(orgSid, userSid) {
+			Expect.datatype.isString(orgSid);
+			Expect.datatype.isString(userSid);
+			var grMember = 
+						new GlideRecord(Metadata.scopedTableNames.ORG_MEMBER);
+			grMember.initialize();
+			grMember.setValue('organization', orgSid);
+			grMember.setValue('user', userSid);
+			grMember.insert();
+		}
+	}
+	
+	function notifyApplicant(result) {
+		Expect.datatype.isString(result);
+	}
+	
+	function inactivateApplication(grApp) {
+		Expect.datatype.isInstanceOf(grApp, GlideRecord);
+		grApp.active.setValue(false);
+		grApp.update();
+	}
+	
+	function rejectApplication() {
+		var grApp = getApplication();
+		notifyApplicant('rejected');
+		inactivateApplication(grApp);
+	}
+	
+	function getApplication() {
+		var grApp = new GlideRecord(options.table);
+		grApp.addActiveQuery();
+		grApp.orderByDesc('sys_updated_on');
+		grApp.setLimit(1);
+		grApp.query();
+		if(grApp.next()) {
+			Logging.info(grApp.getValue(options.response_text));
+		} else {
+			throw new Error ("NO NEW APPLICATIONS");
+		}
+		return grApp;
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-23 00:54:59</sys_created_on>
+        <sys_id>d0d2effddb952300d06853184b961986</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>Application Review</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sp_widget_d0d2effddb952300d06853184b961986</sys_update_name>
+        <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 19:54:47</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <h1>
+    Application Review
+  </h1>
+  <h3>
+    Organization: {{data.owner}}
+  </h3>
+  <h4>
+    Applicant: {{data.applicant}}
+  </h4>
+  <p ng-repeat="response in data.responses track by $index">
+    <span>{{ ($index + 1).toString() + ".&nbsp;&nbsp;" 
+      				+ data.questions[$index]}} </span><br/>
+    	{{"Response:&nbsp;" + data.responses[$index]}}  
+  </p>
+  <button ng-click="c.submitApproval()">
+    Approve Application
+  </button>
+  <button ng-click="c.submitRejection()">
+    Reject Application
+  </button>
+  <p>
+    Table: {{data.table}}
+  </p>
+  <p>
+    Title: {{data.title}}
+    Questions: {{ data.questions }}
+    Response: {{ data.responses }}
+  </p>
+</div>]]></template>
+    </sp_widget>
+</record_update>

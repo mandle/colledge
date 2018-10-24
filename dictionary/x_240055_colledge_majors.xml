@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Majors" max_length="40" name="x_240055_colledge_majors" type="collection">
+        <element label="Abbreviation" max_length="40" name="abbreviation" type="string"/>
+        <element label="College" max_length="32" name="college" reference="x_240055_colledge_colleges" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <index name="index">
+            <element name="college"/>
+        </index>
+    </element>
+</database>

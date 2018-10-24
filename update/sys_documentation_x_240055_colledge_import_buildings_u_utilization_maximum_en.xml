@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_utilization_maximum" label="utilization maximum" language="en" table="x_240055_colledge_import_buildings">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_utilization_maximum</element>
+            <help/>
+            <hint/>
+            <label>utilization maximum</label>
+            <language>en</language>
+            <name>x_240055_colledge_import_buildings</name>
+            <plural>utilization maximums</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+            <sys_created_on>2018-10-16 17:14:53</sys_created_on>
+            <sys_id>1affb2b7db412300d06853184b9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>utilization maximum</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_documentation_x_240055_colledge_import_buildings_u_utilization_maximum_en</sys_update_name>
+            <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+            <sys_updated_on>2018-10-16 17:14:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

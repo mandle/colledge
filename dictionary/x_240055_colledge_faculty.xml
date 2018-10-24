@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Faculty" max_length="40" name="x_240055_colledge_faculty" type="collection">
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Email" max_length="100" name="email" type="email"/>
+        <element label="Faculty ID" max_length="40" name="faculty_id" type="string"/>
+        <element label="First Name" max_length="40" name="first_name" type="string"/>
+        <element label="Home Phone" max_length="40" name="home_phone" type="phone_number_e164"/>
+        <element label="Last Name" max_length="40" name="last_name" type="string"/>
+        <element label="Middle Name" max_length="40" name="middle_name" type="string"/>
+        <element label="Mobile Phone" max_length="40" name="mobile_phone" type="phone_number_e164"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="User Reference" mandatory="true" max_length="32" name="user_reference" reference="sys_user" type="reference"/>
+        <element label="State / Province" max_length="40" name="state" type="string"/>
+        <element label="Street" max_length="40" name="street" type="multi_two_lines"/>
+        <element display="true" label="User Reference" max_length="32" name="user_reference" reference="sys_user" type="reference"/>
+        <element label="Zip / Postal Code" max_length="40" name="zip" type="string"/>
         <index name="index">
             <element name="user_reference"/>
         </index>

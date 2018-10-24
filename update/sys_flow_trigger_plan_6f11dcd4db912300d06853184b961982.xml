@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_flow_trigger_plan">
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"6f11dcd4db912300d06853184b961982","name":"plan"}}</plan>
+        <plan_id>497ec0d0db912300d06853184b961980</plan_id>
+        <snapshot>5cd9b018db152300d06853184b9619ae</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-17 17:47:54</sys_created_on>
+        <sys_id>6f11dcd4db912300d06853184b961982</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>6711dcd4db912300d06853184b961974</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_flow_trigger_plan_6f11dcd4db912300d06853184b961982</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-17 20:45:19</sys_updated_on>
+        <trigger display_value="">6711dcd4db912300d06853184b961974</trigger>
+    </sys_flow_trigger_plan>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="request_item" label="Request Item" language="en" table="var__m_sys_hub_flow_input_f29cef82db152300d06853184b9619b8">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>request_item</element>
+            <help/>
+            <hint/>
+            <label>Request Item</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f29cef82db152300d06853184b9619b8</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+            <sys_created_on>2018-10-23 20:16:14</sys_created_on>
+            <sys_id>c79cef82db152300d06853184b9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Request Item</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f29cef82db152300d06853184b9619b8_request_item_en</sys_update_name>
+            <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 20:16:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

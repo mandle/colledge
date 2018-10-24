@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Flow Test Cody" max_length="40" name="x_240055_colledge_flow_test_cody" type="collection">
+        <element attributes="import_attribute_name=first name,edge_encryption_enabled=true" label="first name" max_length="40" name="u_first_name" type="string"/>
+        <element attributes="import_attribute_name=last name,edge_encryption_enabled=true" label="last name" max_length="40" name="u_last_name" type="string"/>
+    </element>
+</database>

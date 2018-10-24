@@ -3,62 +3,62 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_240055_colledge_room" element="NULL" name="x_240055_colledge_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e41972e3db052300d06853184b961974</list_id>
+            <list_id display_value="x_240055_colledge_room" element="NULL" name="x_240055_colledge_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">27d45d6cdb512300d06853184b96196b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 22:06:15</sys_created_on>
-            <sys_id>a01972e3db052300d06853184b961975</sys_id>
+            <sys_created_on>2018-10-18 17:22:24</sys_created_on>
+            <sys_id>ebd45d6cdb512300d06853184b96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 22:06:15</sys_updated_on>
+            <sys_updated_on>2018-10-18 17:22:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>compose_space</element>
-            <list_id display_value="x_240055_colledge_room" element="NULL" name="x_240055_colledge_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e41972e3db052300d06853184b961974</list_id>
+            <list_id display_value="x_240055_colledge_room" element="NULL" name="x_240055_colledge_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">27d45d6cdb512300d06853184b96196b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 22:06:15</sys_created_on>
-            <sys_id>281972e3db052300d06853184b961975</sys_id>
+            <sys_created_on>2018-10-18 17:22:24</sys_created_on>
+            <sys_id>6fd45d6cdb512300d06853184b96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 22:06:15</sys_updated_on>
+            <sys_updated_on>2018-10-18 17:22:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>floor</element>
-            <list_id display_value="x_240055_colledge_room" element="NULL" name="x_240055_colledge_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e41972e3db052300d06853184b961974</list_id>
+            <element>gender</element>
+            <list_id display_value="x_240055_colledge_room" element="NULL" name="x_240055_colledge_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">27d45d6cdb512300d06853184b96196b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 22:06:15</sys_created_on>
-            <sys_id>a81972e3db052300d06853184b961975</sys_id>
+            <sys_created_on>2018-10-18 17:22:24</sys_created_on>
+            <sys_id>efd45d6cdb512300d06853184b96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 22:06:15</sys_updated_on>
+            <sys_updated_on>2018-10-18 17:22:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>gender</element>
-            <list_id display_value="x_240055_colledge_room" element="NULL" name="x_240055_colledge_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e41972e3db052300d06853184b961974</list_id>
+            <element>room_type</element>
+            <list_id display_value="x_240055_colledge_room" element="NULL" name="x_240055_colledge_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">27d45d6cdb512300d06853184b96196b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 22:06:15</sys_created_on>
-            <sys_id>2c1972e3db052300d06853184b961975</sys_id>
+            <sys_created_on>2018-10-18 17:22:24</sys_created_on>
+            <sys_id>63d45d6cdb512300d06853184b96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 22:06:15</sys_updated_on>
+            <sys_updated_on>2018-10-18 17:22:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -72,10 +72,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>Brandon.Wing@cognizant.com</sys_created_by>
-            <sys_created_on>2018-10-15 22:06:15</sys_created_on>
+            <sys_created_on>2018-10-18 17:22:24</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e41972e3db052300d06853184b961974</sys_id>
+            <sys_id>27d45d6cdb512300d06853184b96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_240055_colledge_room</sys_name>
             <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
@@ -83,7 +83,7 @@
             <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
             <sys_update_name>sys_ui_list_x_240055_colledge_room_null</sys_update_name>
             <sys_updated_by>Brandon.Wing@cognizant.com</sys_updated_by>
-            <sys_updated_on>2018-10-15 22:06:15</sys_updated_on>
+            <sys_updated_on>2018-10-18 17:22:24</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

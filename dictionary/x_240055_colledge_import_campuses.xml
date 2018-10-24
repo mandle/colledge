@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="import campuses" max_length="40" name="x_240055_colledge_import_campuses" type="collection">
+        <element attributes="import_attribute_name=Gross Area" label="Gross Area" max_length="40" name="u_gross_area" type="integer"/>
+        <element attributes="import_attribute_name=Location,edge_encryption_enabled=true" label="Location" max_length="40" name="u_location" type="string"/>
+        <element attributes="import_attribute_name=Managed By,edge_encryption_enabled=true" label="Managed By" max_length="40" name="u_managed_by" type="string"/>
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=Notes,edge_encryption_enabled=true" label="Notes" max_length="40" name="u_notes" type="string"/>
+        <element attributes="import_attribute_name=Usable Area" label="Usable Area" max_length="40" name="u_usable_area" type="integer"/>
+    </element>
+</database>

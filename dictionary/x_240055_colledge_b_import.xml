@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="B import" max_length="40" name="x_240055_colledge_b_import" type="collection">
+        <element attributes="import_attribute_name=Building,edge_encryption_enabled=true" label="Building" max_length="40" name="u_building" type="string"/>
+        <element attributes="import_attribute_name=Building type,edge_encryption_enabled=true" label="Building type" max_length="40" name="u_building_type" type="string"/>
+        <element attributes="import_attribute_name=Campus,edge_encryption_enabled=true" label="Campus" max_length="40" name="u_campus" type="string"/>
+        <element attributes="import_attribute_name=Location,edge_encryption_enabled=true" label="Location" max_length="40" name="u_location" type="string"/>
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+    </element>
+</database>

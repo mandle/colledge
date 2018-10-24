@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmn_schedule" label="Class Schedules" max_length="40" name="x_240055_colledge_class_schedules" type="collection">
+        <element label="End Time" max_length="40" name="end_time" type="glide_time"/>
+        <element label="Start Time" max_length="40" name="start_time" type="glide_time"/>
+    </element>
+</database>

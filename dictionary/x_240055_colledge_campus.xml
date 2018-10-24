@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Campus" max_length="40" name="x_240055_colledge_campus" type="collection">
-        <element label="Compose Campus" mandatory="true" max_length="32" name="compose_campus" reference="fm_campus" type="reference"/>
+        <element display="true" label="Compose Campus" mandatory="true" max_length="32" name="compose_campus" reference="fm_campus" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="compose_campus"/>

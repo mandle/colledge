@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="privilege_level" table="x_240055_colledge_m2m_organizations_users" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 1</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>100</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:20:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0144cb4edb512300d06853184b9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:20:11</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 2</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>200</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:20:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b54c74edb512300d06853184b96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:20:27</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 3</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>300</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:20:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1264474edb512300d06853184b961905</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:20:37</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 4</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>400</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:20:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d748f4edb512300d06853184b961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:20:49</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 5</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>500</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:20:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb744f4edb512300d06853184b9619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:20:59</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 6</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>600</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:21:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36848f4edb512300d06853184b96196d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:21:12</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 7</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>700</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:21:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad94038edb512300d06853184b961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:21:22</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 8</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>800</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:21:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6a4078edb512300d06853184b961958</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:21:41</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 9</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>900</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:21:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ecb48f4edb512300d06853184b961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:21:52</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>privilege_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rank 10</label>
+            <language>en</language>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sequence>1000</sequence>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:22:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>74c4878edb512300d06853184b96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:22:09</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>privilege_level</element>
+            <name>x_240055_colledge_m2m_organizations_users</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Howard.Chen@cognizant.com</sys_created_by>
+            <sys_created_on>2018-10-23 17:20:11</sys_created_on>
+            <sys_id>4054474edb512300d06853184b961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>privilege_level</sys_name>
+            <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+            <sys_update_name>sys_choice_x_240055_colledge_m2m_organizations_users_privilege_level</sys_update_name>
+            <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
+            <sys_updated_on>2018-10-23 17:20:11</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

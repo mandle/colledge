@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Advising Appintment">000c16fcdb512300d06853184b96193d</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-19 17:25:06</sys_created_on>
+        <sys_id>811fda70db912300d06853184b96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Advising Appintment.Brandon Wing</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_811fda70db912300d06853184b96195b</sys_update_name>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-19 17:25:06</sys_updated_on>
+        <user_criteria display_value="Brandon Wing">740f12b0db912300d06853184b96199e</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+</record_update>

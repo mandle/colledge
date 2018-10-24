@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ce00b73fdbc12300d06853184b9619cb</block>
+        <comment/>
+        <connected_to>0bb118ac-eed6-41df-ac7f-27a3bf33f0e1</connected_to>
+        <display_text/>
+        <flow display_value="Test">6c103b3fdbc12300d06853184b961987</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Cody.Dotson@cognizant.com</sys_created_by>
+        <sys_created_on>2018-10-16 20:45:03</sys_created_on>
+        <sys_id>fc103b3fdbc12300d06853184b9619d0</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_fc103b3fdbc12300d06853184b9619d0</sys_update_name>
+        <sys_updated_by>Cody.Dotson@cognizant.com</sys_updated_by>
+        <sys_updated_on>2018-10-16 21:01:06</sys_updated_on>
+        <ui_id>2bc9a0bc-7939-49c0-b0b5-886037d02f57</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fc103b3fdbc12300d06853184b9619d0"/>
+</record_update>

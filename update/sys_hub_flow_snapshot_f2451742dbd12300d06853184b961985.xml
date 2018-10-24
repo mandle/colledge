@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_snapshot">
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Have the librarian to approve laptop request from potential library users</description>
+        <internal_name>librarian_to_approve_laptop_request</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time"},{"name":"Service Catalog_1.request_item","label":"Trigger➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference"},{"name":"e27eccc9-345e-4456-8edd-48622ff6732a.reason_for_requesting_laptop","label":"1➛reason_for_requesting_laptop","reference":"","reference_display":"reason_for_requesting_laptop","type":"multi_small","base_type":"multi_small"},{"name":"e27eccc9-345e-4456-8edd-48622ff6732a.contact_number","label":"1➛contact_number","reference":"","reference_display":"contact_number","type":"string","base_type":"string"},{"name":"e27eccc9-345e-4456-8edd-48622ff6732a.email","label":"1➛email","reference":"","reference_display":"email","type":"email","base_type":"email"},{"name":"e27eccc9-345e-4456-8edd-48622ff6732a.name","label":"1➛name","reference":"x_240055_colledge_library_hardware","reference_display":"Library Hardware","type":"reference","base_type":"reference"},{"name":"4c8fd6a0-3ee3-4bf1-ae4f-5468205299e2.Catalog Task","label":"2➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id"},{"name":"ecde760b-0c15-4666-849c-5a0e32331529.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice"},{"name":"{{static.bb65b231db552300d06853184b9619c5}}","label":"Library Staff","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"}]</label_cache>
+        <master>true</master>
+        <name>Librarian to approve laptop request</name>
+        <outputs/>
+        <parent_flow display_value="Librarian to approve laptop request">8d4317cedb912300d06853184b9619c0</parent_flow>
+        <remote_trigger_id/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
+        <sys_created_on>2018-10-23 18:34:22</sys_created_on>
+        <sys_id>f2451742dbd12300d06853184b961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Librarian to approve laptop request</sys_name>
+        <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
+        <sys_update_name>sys_hub_flow_snapshot_f2451742dbd12300d06853184b961985</sys_update_name>
+        <sys_updated_by>aj.aj.sawant@gmail.com</sys_updated_by>
+        <sys_updated_on>2018-10-23 18:34:22</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f2451742dbd12300d06853184b961985"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f2451742dbd12300d06853184b961985"/>
+</record_update>

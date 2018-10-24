@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Colledge M2m Majors Students" max_length="40" name="x_240055_colledge_m2m_majors_students" type="collection">
+        <element label="Majors" max_length="32" name="majors" reference="x_240055_colledge_majors" type="reference"/>
+        <element label="Student" max_length="32" name="student" reference="x_240055_colledge_student" type="reference"/>
+        <index name="index">
+            <element name="majors"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

@@ -12,6 +12,7 @@
         <delivery_time>1970-01-03 00:00:00</delivery_time>
         <description/>
         <entitlement_script/>
+        <flow_designer_flow/>
         <group/>
         <hide_sp>false</hide_sp>
         <icon/>
@@ -45,15 +46,17 @@
         <sc_catalogs/>
         <sc_ic_item_staging/>
         <sc_ic_version/>
-        <script><![CDATA[var student_name = gs.getUser().getName();
+        <script><![CDATA[Expect.execute("Record Producer", "Housing Maintenance Request", function() {
+	var student_name = gs.getUser().getName();
 
-var housing = new Housing();
-
-current.short_description = "Housing request for " + student_name;
-current.description = "Campus: " + producer.which_campus_is_it_specifically + "\n"
-					+ "Building: " + producer.which_building + "\n"
-					+ "Room: " + producer.which_room_is_this + "\n"
-					+ "Description: " + producer.describe_the_crisis;]]></script>
+	var housing = new Housing();
+	current.short_description = "Housing request for " + student_name;
+	current.description = "Campus: " + housing.getStudentCampus().getDisplayValue() + "\n"
+						+ "Building: " + housing.getStudentBuilding().getDisplayValue() + "\n"
+						+ "Floor: " + housing.getStudentFloor().getDisplayValue() + "\n"
+						+ "Room: " + housing.getStudentRoom().getDisplayValue() + "\n"
+						+ "Description: " + producer.describe_the_crisis;
+});]]></script>
         <short_description>Let student make a housing maintenance request</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -61,14 +64,14 @@ current.description = "Campus: " + producer.which_campus_is_it_specifically + "\
         <sys_created_by>aj.aj.sawant@gmail.com</sys_created_by>
         <sys_created_on>2018-10-15 20:47:46</sys_created_on>
         <sys_id>82d662e3dbc12300d06853184b9619a6</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Housing Maintainence Request</sys_name>
         <sys_package display_value="colledge" source="x_240055_colledge">f48ceddedb452300d06853184b9619ba</sys_package>
         <sys_policy/>
         <sys_scope display_value="colledge">f48ceddedb452300d06853184b9619ba</sys_scope>
         <sys_update_name>sc_cat_item_producer_82d662e3dbc12300d06853184b9619a6</sys_update_name>
         <sys_updated_by>Howard.Chen@cognizant.com</sys_updated_by>
-        <sys_updated_on>2018-10-15 23:09:43</sys_updated_on>
+        <sys_updated_on>2018-10-16 18:58:43</sys_updated_on>
         <table_name>facilities_request</table_name>
         <template/>
         <type>item</type>
